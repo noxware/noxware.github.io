@@ -1,0 +1,42 @@
+[
+  {
+    "title": "NodeJS",
+    "icon": "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg"
+  },
+  {
+    "title": "ExpressJS",
+    "icon": "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+  },
+  {
+    "title": "ReactJS",
+    "icon": "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"
+  },
+  {
+    "title": "React Native",
+    "icon": "https://images.codedaily.io/icons/react.svg"
+  },
+  {
+    "title": "ElectronJS",
+    "icon": "https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg"
+  },
+  {
+    "title": "MongoDB",
+    "icon": "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"
+  },
+  {
+    "title": "BeautifulSoup",
+    "icon": "https://funthon.files.wordpress.com/2017/05/bs.png?w=772"
+  },
+  {
+    "title": "Qt",
+    "icon": "https://www.vectorlogo.zone/logos/qtio/qtio-icon.svg"
+  },
+  {
+    "title": "NeutralinoJS",
+    "icon": "https://neutralino.js.org/assets/img/logo"
+  },
+  {
+    "title": "Proton Native",
+    "icon": "https://img.stackshare.io/service/8517/eE3nAsW.png"
+  }
+]

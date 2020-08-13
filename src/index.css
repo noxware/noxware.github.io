@@ -1,0 +1,210 @@
+/* SOME RESETS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}*/
+
+/* GENERIC */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Georgia, serif, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(247, 250, 252);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, Arial, sans-serif
+}
+
+/* STEPS */
+
+.app {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
+  color: white;
+  height: 90vh;
+  width: 100%;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  max-width: 70%;
+  text-align: center;
+  color: #c4ced7;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 40px 100px 40px 100px
+}
+
+.about h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;;
+}
+
+.about .circular-image {
+  float: left;
+  margin-right: 1.5rem;
+  height: 170px;
+  width: 170px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 100px 40px 100px
+}
+
+.skills h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+
+
+/* COMPONENTS */
+
+.quote {
+  font-size: 1.6em;
+  color: rgb(117, 117, 117)
+}
+
+.circular-image {
+  display: inline-block;
+  margin: 0;
+}
+
+.circular-image img {
+  border-radius: 50%;
+  height: 100%;
+  width: auto;
+}
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.skill-category h3 {
+  font-size: 1.5rem;
+}
+
+.skill-category .container{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px 50px 15px 50px
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10%;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: white;
+}
+
+.skill-item img {
+  height: 64px;
+  width: auto;;
+}
+
+.skill-item:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.skill-item .title {
+  margin-top: 10px;
+}
+
+.skill-item .text {
+  margin-top: 5px;
+}
+
+.fake-code-editor {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+}
+
+.fake-code-editor .code {
+
+}
