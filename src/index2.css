@@ -82,13 +82,13 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
   color: white;
-  height: 90vh;
+  /*height: 90vh;*/
   width: 100%;
 }
 
 .intro h1 {
+  margin-top: 4rem;
   font-size: 4rem;
-  margin-bottom: 5px;
 }
 
 .intro h2 {
@@ -96,6 +96,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 70%;
   text-align: center;
   color: #c4ced7;
+  margin-top: 5px;
+  margin-bottom: 4rem;
+}
+
+.intro .fce {
+  min-width: 600px;
+  min-height: 400px;
+  margin-bottom: 4rem;
 }
 
 .about {
@@ -130,7 +138,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 15px;
 }
 
-
+.skills .skill-category {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
 
 /* COMPONENTS */
 
@@ -198,13 +209,61 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 5px;
 }
 
-.fake-code-editor {
+/*
+  Fake Code Editor Component
+
+  k (keyword)
+  d (variable definition)
+  o (operator) symbols like = => + etc
+  v (variable)
+  p (property)
+  s (string)
+  n (number)
+  b (boolean)
+*/
+
+.fce {
+  font-family: monospace;
+  font-size: 1.1em;
   background-color: black;
   border-radius: 10px;
   color: white;
-  padding: 20px;
+  padding: 15px;
 }
 
-.fake-code-editor .code {
 
+.fce .top-bar {
+  margin-bottom: 5px;
+}
+
+.fce .k {
+  color: rgb(230, 205, 105);
+}
+
+.fce .d {
+  color: rgb(85, 181, 219)
+}
+
+.fce .o {
+  color: rgb(159, 202, 86)
+}
+
+.fce .v {
+  color: rgb(160, 116, 196)
+}
+
+.fce .p {
+  color: rgb(160, 116, 196)
+}
+
+.fce .s {
+  color: rgb(85, 181, 219)
+}
+
+.fce .n {
+  color: rgb(205, 63, 69)
+}
+
+.fce .b {
+  color: #cd3f45
 }

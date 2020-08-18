@@ -1,35 +1,41 @@
-import React, { CSSProperties } from 'react';
-
-interface StylesAliases {
-  [name: string]: CSSProperties | undefined
-}
+import React from 'react';
 
 interface Props {
-  stylesAliases?: StylesAliases
   code: string
 }
 
 export default function (props: Props) {
-  let {code, stylesAliases} = props;
+  const codeLines: string[] = props.code.split('\n');
+  const codeLinesOfTokens: string[][] = codeLines.map(l => l.split('%'));
 
-  stylesAliases = stylesAliases || {};
+  let currentClass = 'x'
+  const resultPres = codeLinesOfTokens.map((lineTokens, j) => {
+    let resultSpans: JSX.Element[] = [];
 
-  let currentInlineStyle: CSSProperties = {}
-  const resultSpans: JSX.Element[] = [];
+    lineTokens.forEach((t, i) => {
+      if (i % 2 === 0) {
+        resultSpans.push(<span key={i /* Positions are not going to change */} className={currentClass}>{t}</span>);
+      } else {
+        currentClass = t.trim();
+      }
+    });
 
-  props.code.split('%').forEach((t, i) => {
-    if (i % 2 === 0) {
-      resultSpans.push(<span key={i /* Positions are not going to change */} style={currentInlineStyle}>{t}</span>);
-    } else {
-      currentInlineStyle = (props.stylesAliases as StylesAliases)[t] || currentInlineStyle;
-    }
+    return <pre key={j}>{resultSpans}</pre>
   });
 
   return (
-    <div className="fake-code-editor">
-      <div className="top-bar">xxx</div>
-      <div className="code" style={{}}>
-        {resultSpans}
+    <div className="fce">
+      <div className="top-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+          <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+            <circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle>
+            <circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle>
+            <circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
+          </g>
+        </svg>
+      </div>
+      <div className="code">
+        {resultPres}
       </div>
     </div>
   )

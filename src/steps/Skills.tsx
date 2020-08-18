@@ -9,17 +9,21 @@ export default function () {
   return (
     <div className='skills'>
       <h1>Skills</h1>
-      <SkillCategory title='Programming and markup languages'>
-        {
-          langs.map(l => <SkillItem key={l.title} icon={l.icon} title={l.title}/>)
-        }
-      </SkillCategory>
-
-      <SkillCategory title='Libraries and frameworks'>
-        {
-          libs.map(l => <SkillItem key={l.title} icon={l.icon} title={l.title}/>)
-        }
-      </SkillCategory>
+      
+      <div className='category'>
+        <h2>Programming and markup languages</h2>
+        <div className="items">
+          {langs.map(l => <SkillItem key={l.title} icon={l.icon} title={l.title}/>)}
+        </div>
+        
+      </div>
+      <div className='category'>
+        <h2>Libraries and frameworks</h2>
+        <div className="items">
+          {libs.map(l => <SkillItem key={l.title} icon={l.icon} title={l.title}/>)}
+        </div>
+      </div>
+      
     </div>
   );
 }

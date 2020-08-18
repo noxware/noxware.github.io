@@ -1,0 +1,152 @@
+// Circualr image
+
+.circular-image {
+  display: inline-block;
+  margin: 0;
+
+  img {
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+  }
+}
+// Quote
+
+.quote {
+  font-size: 1.6em;
+  color: rgb(117, 117, 117)
+}
+
+// Skill category
+
+.skill-category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 50px 15px 50px
+  }
+}
+
+// Skill item
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 0.4em;
+  border-radius: 10%;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  height: 150px;
+  width: 130px;
+
+  &:hover {
+    background-color: rgb(194, 194, 194);
+  }
+
+  img {
+    height: 64px;
+    width: 64px;
+  }
+
+  .title {
+    margin-top: 1em;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .text {
+    margin-top: 1em;
+    font-size: 0.7em;
+  }
+}
+
+/*
+  Fake Code Editor Component
+
+  k (keyword)
+  d (variable definition)
+  o (operator) symbols like = => + etc
+  v (variable)
+  v2
+  p (property)
+  s (string)
+  n (number)
+  b (boolean)
+  c (comment)
+  i (cursor)
+*/
+
+.fce {
+  font-family: monospace;
+  font-size: 1.1em;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 15px;
+
+  .top-bar {
+    margin-bottom: 5px;
+  }
+
+  .k {
+    color: rgb(230, 205, 105);
+  }
+
+  .d {
+    color: rgb(85, 181, 219)
+  }
+
+  .o {
+    color: rgb(159, 202, 86)
+  }
+
+  .v {
+    color: #55b5db
+  }
+
+  .v2 {
+    color: rgb(160, 116, 196)
+  }
+
+  .p {
+    color: rgb(160, 116, 196)
+  }
+
+  .s {
+    color: rgb(85, 181, 219)
+  }
+
+  .n {
+    color: rgb(205, 63, 69)
+  }
+
+  .b {
+    color: #cd3f45
+  }
+
+  .c {
+    color: rgb(65, 83, 91)
+  }
+
+  .i::after {
+    display: inline-block;
+    content: ' ';
+    background-color: white;
+  }
+}
