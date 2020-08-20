@@ -1,0 +1,143 @@
+// Source code visible at 13px under an ideal device
+@media (min-width: 500px) {
+  .intro {
+    h1 {
+      font-size: 2.8em;
+    }
+
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+
+  .about {
+    .speak p {
+      text-indent: 1.5em;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .intro {
+    padding: 2rem;
+    height: 100vh;
+
+    .fce {
+      max-width: 720px;
+    }
+
+    h1, h2 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .about{
+    h1 {
+      font-size: 2.2em;
+    }
+
+    .speak p {
+      font-size: 1.1em;
+    }
+  }
+
+  .skills {
+    h1 {
+      font-size: 2.2em;
+    }
+
+    
+    .category .items .skill-item {
+      height: 120px;
+      width: 100px;
+      .title {
+        font-size: 15px;
+      }
+      
+  
+      .image {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 730px) {
+  .intro {
+
+    .fce .code {
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 3.2em;
+    }
+  } 
+
+  .about {
+    .speak {
+      //display: block;
+
+      flex-direction: row;
+      align-items: center;
+      max-width: 1000px;
+
+      p {
+        font-size: 18px;
+        text-indent: 0;
+      }
+
+      .circular-image {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    h2 {
+      font-size: 1.7em;
+    }
+  }
+
+  .skills {
+    h1 {
+      font-size: 2.2em;
+    }
+
+    
+    .category .items .skill-item {
+      height: 140px;
+      width: 120px;
+      
+  
+      .image {
+        height: 55px;
+        width: 55px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .intro {
+    h1 {
+      font-size: 4em;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 3rem;
+    }
+
+    /*.fce {
+      max-width: 800px;
+      .code {
+        font-size: 17px;
+      }
+    }*/
+  }
+}

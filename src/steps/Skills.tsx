@@ -1,5 +1,4 @@
 import React from 'react';
-import SkillCategory from '../components/SkillCategory';
 import SkillItem from '../components/SkillItem';
 
 import langs from '../data/skills-langs.json';

@@ -5,12 +5,12 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Georgia, serif, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-   sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(247, 250, 252);
-  line-height: 1.2;
+  line-height: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,13 +57,14 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* 320-600 easily */
 //@media (max-width: 600px) {
   .intro {
-    padding: 2rem;
+    padding: 1rem;
+    min-height: 85vh;
 
     h1 {
-      font-size: 2em;  
+      font-size: 2.2em;  
       margin-bottom: 1rem;
     }
 
@@ -72,10 +73,12 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 1rem;
     }
 
-    /*.fce {                              ***********************************************************************
-      width: 100%;        
-      max-width: 400px;
-    }*/
+    .fce {                              
+      width: 100%;
+      .code {
+        font-size: 13px;
+      }
+    }
   }
 
   .about {
@@ -83,10 +86,10 @@ h1, h2, h3, h4, h5, h6 {
 
     h1 {
       font-size: 1.7em;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
 
-    .about-speak {
+    .speak {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -95,37 +98,27 @@ h1, h2, h3, h4, h5, h6 {
       .circular-image {
         height: 150px;
         width: 150px;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
       }
   
 
 
       p {
-        text-align: center;
-        line-height: 1.8em;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-      }
-      p:first-of-type:before {
-        display: inline-block;
-        position: relative;
-        transform: scale(1.7);
-        left: -0.3em;
-        content: '“';
+        text-align: left;
+        line-height: 1.2; //1.7;
+        //font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 1rem;
+        text-indent: 1em;
       }
 
-      p:last-of-type:after {
-        display: inline-block;
-        position: relative;
-        transform: scale(1.7);
-        right: -0.3em;
-        bottom: -0.1em;
-        content: '”';
+      p:last-of-type {
+        margin-bottom: 0;
       }
     }
   }
 
   .skills { 
-    padding: 2rem;
+    padding: 1rem;
 
     h1 {
       font-size: 1.7em;
@@ -135,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
     .category  {
+      max-width: 1000px;
       h2 {
         font-size: 1.2em;
         width: 100%;
@@ -154,27 +148,41 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+
+        .skill-item {
+          height: 100px;
+          width: 80px;
+          .title {
+            font-size: 11px;
+          }
+          
+
+          .image {
+            height: 42px;
+            width: 42px;
+          }
+        }
       }
     }
   }
 //}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px and up) 
 @media (min-width: 600px) {
 
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) 
 @media  (min-width: 768px) {
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) 
 @media (min-width: 992px) {
 
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) 
 @media (min-width: 1200px) {
 
-}
+}*/

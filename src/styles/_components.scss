@@ -3,6 +3,7 @@
 .circular-image {
   display: inline-block;
   margin: 0;
+  padding: 0;
 
   img {
     border-radius: 50%;
@@ -15,28 +16,6 @@
 .quote {
   font-size: 1.6em;
   color: rgb(117, 117, 117)
-}
-
-// Skill category
-
-.skill-category {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-
-  h3 {
-    font-size: 1.5rem;
-  }
-
-  .container{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px 50px 15px 50px
-  }
 }
 
 // Skill item
@@ -102,6 +81,14 @@
 
   .top-bar {
     margin-bottom: 5px;
+  }
+
+  .code {
+    line-height: 1.2;
+    
+    pre {
+      white-space: pre-wrap; 
+    }
   }
 
   .k {
