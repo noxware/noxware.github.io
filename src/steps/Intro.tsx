@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import FakeCodeEditor from '../components/FakeCodeEditor';
+import AnimatedFCE from '../components/AnimatedFCE';
 
 const bigCode = `%k%import %d%api%x%, {%d%decrypt%x%} %k%from %s%'api'%x%;
  
@@ -38,16 +38,18 @@ export default function () {
 
   useEffect(() => {
     const handleResize = () => setCode(getCode());
+    
     window.addEventListener('resize', handleResize);
 
+
     return () => window.removeEventListener('resize', handleResize);
-  });
+  }, []);
 
   return (
     <div className='intro'>
       <h1>Franco Profeti</h1>
       <h2>Developer from Uruguay passionate about open source technologies</h2>
-      <FakeCodeEditor code={code} />
+      <AnimatedFCE steps={[{before: '', text: code, after: '%i%', speed: 20}]} />
     </div>
   );
 }

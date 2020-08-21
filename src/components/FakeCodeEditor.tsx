@@ -1,10 +1,11 @@
 import React from 'react';
 
 interface Props {
-  code: string
+  code: string;
+  style?: React.CSSProperties;
 }
 
-export default function (props: Props) {
+export default React.forwardRef<HTMLDivElement, Props>((props, ref)=>{
   const codeLines: string[] = props.code.split('\n');
   const codeLinesOfTokens: string[][] = codeLines.map(l => l.split('%'));
 
@@ -24,7 +25,7 @@ export default function (props: Props) {
   });
 
   return (
-    <div className="fce">
+    <div className="fce" style={props.style} ref={ref}>
       <div className="top-bar">
         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
           <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
@@ -39,4 +40,4 @@ export default function (props: Props) {
       </div>
     </div>
   )
-}
+});
