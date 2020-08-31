@@ -29,7 +29,7 @@ const smallCode = `%k%import %x%{%d%get%x%} %k%from %s%'api'%x%;
  
 %v%main%x%();
  
-%c%/* Output: This Javascript animation is different and better in a device with higer resolution, like a desktop computer. */`;
+%c%/* Output: This Javascript animation is different and better in a device with higher resolution, like a desktop computer. */`;
 
 export default function () {
   const getCode = () => window.innerWidth < 600 ? smallCode : bigCode;
@@ -49,7 +49,7 @@ export default function () {
     <div className='intro'>
       <h1>Franco Profeti</h1>
       <h2>Developer from Uruguay passionate about open source technologies</h2>
-      <AnimatedFCE steps={[{before: '', text: code, after: '%i%', speed: 20}]} />
+      <AnimatedFCE code={code} cursor='%i%' speed={20} />
     </div>
   );
 }

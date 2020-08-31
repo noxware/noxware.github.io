@@ -10,11 +10,6 @@
     }
   }
 
-  .about {
-    .speak p {
-      text-indent: 1.5em;
-    }
-  }
 }
 
 @media (min-width: 600px) {
@@ -86,6 +81,7 @@
       p {
         font-size: 18px;
         text-indent: 0;
+        text-align: left;
       }
 
       .circular-image {

@@ -79,7 +79,7 @@ export default function (props: Props) {
     stepInterval = window.setInterval(stepIntervalHandler, currentStep.speed);
 
     return () => clearInterval(stepInterval);
-  }, []);
+  }, [props.steps]);
 
   const finalStep = props.steps[props.steps.length - 1];
   const finalCode = finalStep.before + finalStep.text + finalStep.after;

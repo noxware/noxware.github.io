@@ -1,22 +1,14 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
 import FakeCodeEditor from './FakeCodeEditor';
 
-class AnimationStep {
-  constructor(public before: string, public text: string, public after: string, public speed: number) {}
-}
-
-interface Props {
-  steps: AnimationStep[];
-}
-
 const RESIZE_TIMEOUT = 250;
 
-function* createTextIterator(step: AnimationStep) {
+function* createTextIterator(text: string) {
   let current = '';
   let className = false;
 
-  for (const c of step.text) {
-    if (c == '%') {
+  for (const c of text) {
+    if (c === '%') {
       className = !className;
       current += c;
     }
@@ -25,15 +17,19 @@ function* createTextIterator(step: AnimationStep) {
     }
     else {
       current += c;
-      yield step.before + current + step.after;
+      yield current;
     }
   }
 }
 
-export default function (props: Props) {
-  const {steps} = props;
+interface Props {
+  code: string;
+  cursor: string;
+  speed: number;
+}
 
-  const [code, setCode] = useState('');
+export default function (props: Props) {
+  const [currentCode, setCurrentCode] = useState('');
   const [height, setHeight] = useState(0);
   const editorRef = useRef<HTMLDivElement>(null);
 
@@ -61,28 +57,22 @@ export default function (props: Props) {
       setHeight(editorRef.current.offsetHeight);
   }, [height]);
 
-  let currentStepIndex = 0;
-  let currentStep = steps[0];
-
   useEffect(() => {
-    const textIter = createTextIterator(currentStep);
+    let textIter = createTextIterator(props.code);
 
     const animationHandler = () => {
       const nextCode = textIter.next();
 
       if (!nextCode.done) {
-        i = window.setTimeout(animationHandler, currentStep.speed);
-        setCode(nextCode.value);
+        i = window.setTimeout(animationHandler, props.speed);
+        setCurrentCode(nextCode.value);
       }
     }
 
-    let i = window.setTimeout(animationHandler, currentStep.speed);
+    let i = window.setTimeout(animationHandler, props.speed);
 
     return () => clearTimeout(i);
-  }, [steps]);
-
-  const lastStep = steps[steps.length - 1];
-  const finalCode = lastStep.before + lastStep.text + lastStep.after;
-
-  return <FakeCodeEditor code={height? code : finalCode} ref={editorRef} style={height ? {height: height} : undefined} />
+  }, [props.code]);
+  
+  return <FakeCodeEditor code={height? currentCode : props.code} ref={editorRef} style={height ? {height: height} : undefined} />
 }
