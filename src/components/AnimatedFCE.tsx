@@ -65,7 +65,7 @@ export default function (props: Props) {
 
       if (!nextCode.done) {
         i = window.setTimeout(animationHandler, props.speed);
-        setCurrentCode(nextCode.value);
+        setCurrentCode(nextCode.value + props.cursor);
       }
     }
 
@@ -73,6 +73,6 @@ export default function (props: Props) {
 
     return () => clearTimeout(i);
   }, [props.code]);
-  
+
   return <FakeCodeEditor code={height? currentCode : props.code} ref={editorRef} style={height ? {height: height} : undefined} />
 }
