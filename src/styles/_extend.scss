@@ -1,11 +1,11 @@
 // Source code visible at 13px under an ideal device
 @media (min-width: 500px) {
   .intro {
-    h1 {
+    .title {
       font-size: 2.8em;
     }
 
-    h2 {
+    .subtitle {
       font-size: 1.2em;
     }
   }
@@ -21,17 +21,17 @@
       max-width: 720px;
     }
 
-    h1, h2 {
+    .title, .subtitle {
       margin-bottom: 2rem;
     }
   }
 
   .about{
-    h1 {
+    .title {
       font-size: 2.2em;
     }
 
-    .speak p {
+    .speak .paragraph {
       font-size: 1.1em;
     }
   }
@@ -65,7 +65,7 @@
       font-size: 16px;
     }
 
-    h1 {
+    .title {
       font-size: 3.2em;
     }
   } 
@@ -78,7 +78,7 @@
       align-items: center;
       max-width: 1000px;
 
-      p {
+      .paragraph {
         font-size: 18px;
         text-indent: 0;
         text-align: left;
@@ -93,13 +93,13 @@
 
 @media (min-width: 1000px) {
   .intro {
-    h2 {
+    .subtitle {
       font-size: 1.7em;
     }
   }
 
   .skills {
-    h1 {
+    .title {
       font-size: 2.2em;
     }
 
@@ -119,12 +119,12 @@
 
 @media (min-width: 1280px) {
   .intro {
-    h1 {
+    .title {
       font-size: 4em;
       margin-bottom: 3rem;
     }
 
-    h2 {
+    .subtitle {
       font-size: 1.8em;
       margin-bottom: 3rem;
     }

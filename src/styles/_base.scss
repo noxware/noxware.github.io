@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   /*height: 90vh;*/
   width: 100%;
 
-  h2 {
+  .subtitle {
     text-align: center;
     color: #c4ced7;
   }
@@ -63,12 +63,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1rem;
     min-height: 85vh;
 
-    h1 {
+    .title {
       font-size: 2.2em;  
       margin-bottom: 1rem;
     }
 
-    h2   {
+    .subtitle   {
       font-size: 1em;
       margin-bottom: 1rem;
     }
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   .about {
     padding: 2rem;
 
-    h1 {
+    .title {
       font-size: 1.7em;
       margin-bottom: 2rem;
     }
@@ -103,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   
 
 
-      p {
+      .paragraph {
         text-align: center;
         line-height: 1.2; //1.7;
         //font-family: Arial, Helvetica, sans-serif;
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
         //text-indent: 1em;
       }
 
-      p:last-of-type {
+      .paragraph:last-of-type {
         margin-bottom: 0;
       }
     }
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   .skills { 
     padding: 1rem;
 
-    h1 {
+    &>.title {
       font-size: 1.7em;
       margin-bottom: 1rem;
     }
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .category  {
       max-width: 1000px;
-      h2 {
+      &>.subtitle {
         font-size: 1.2em;
         width: 100%;
         text-align: center;
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
       }
 
       &:first-of-type {
-        h2 {
+        &>.subtitle {
           margin-top: 0;
         }
       }

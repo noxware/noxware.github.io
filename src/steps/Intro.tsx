@@ -46,9 +46,9 @@ export default function () {
   }, []);
 
   return (
-    <div className='intro'>
-      <h1>Franco Profeti</h1>
-      <h2>Developer from Uruguay passionate about open source technologies</h2>
+    <div className='intro step'>
+      <h1 className='title'>Franco Profeti</h1>
+      <h2 className='subtitle'>Developer from Uruguay passionate about open source technologies</h2>
       <AnimatedFCE code={code} cursor='%i%' speed={20} />
     </div>
   );
