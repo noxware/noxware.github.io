@@ -6,11 +6,11 @@ import Skills from './steps/Skills';
 
 function App() {
   return (
-    <div className="app">
+    <main className="app">
       <Intro />
       <About />
       <Skills />
-    </div>
+    </main>
   );
 }
 

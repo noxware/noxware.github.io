@@ -36,7 +36,7 @@ export default () => {
   }
 
   return (
-    <div className='about step'>
+    <section className='about step'>
       <h1 className='title'>About me</h1>
         <VSensor onChange={visibilityHandler} partialVisibility>
           <div className='speak'>
@@ -46,6 +46,6 @@ export default () => {
             </blockquote>
           </div>
         </VSensor>
-    </div>
+    </section>
   );
 }

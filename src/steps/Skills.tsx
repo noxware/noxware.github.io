@@ -11,27 +11,27 @@ export default function () {
   const [libsAnimation, setLibsAnimation] = useState('');
 
   return (
-    <div className='skills step'>
+    <section className='skills step'>
       <h1 className='title'>Skills</h1>
 
       <VSensor onChange={(visible: boolean)=>{if (visible) setProgAnimation('show-from-bottom')}} partialVisibility>
-        <div className={`category ${progAnimation} animated`}>
+        <section className={`category ${progAnimation} animated`}>
           <h2 className='subtitle'>Programming and markup languages</h2>
           <div className="items">
             {langs.map(l => <SkillItem key={l.title} icon={l.icon} title={l.title}/>)}
           </div>
           
-        </div>
+        </section>
       </VSensor>
 
       <VSensor onChange={(visible: boolean)=>{if (visible) setLibsAnimation('show-from-bottom')}} partialVisibility>
-        <div className={`category ${libsAnimation} animated`}>
+        <section className={`category ${libsAnimation} animated`}>
           <h2 className='subtitle'>Libraries and frameworks</h2>
           <div className="items">
             {libs.map(l => <SkillItem key={l.title} icon={l.icon} title={l.title}/>)}
           </div>
-        </div>
+        </section>
       </VSensor>
-    </div>
+    </section>
   );
 }
