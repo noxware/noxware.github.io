@@ -13,6 +13,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.3",
+    "react-visibility-sensor": "^5.1.1",
     "sass": "^1.26.10",
     "typescript": "^3.7.5"
   },

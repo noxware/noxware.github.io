@@ -32,7 +32,7 @@ export class OnVisibilityChange {
     if (this.setted) throw new Error('The event has been already setted.');
 
     OnVisibilityChange.realEvents.forEach(eName => {
-      addEventListener(eName, this.checkHandler);
+      window.addEventListener(eName, this.checkHandler);
     });
 
     this.setted = true;
@@ -40,7 +40,7 @@ export class OnVisibilityChange {
 
   unset() {
     OnVisibilityChange.realEvents.forEach(eName => {
-      removeEventListener(eName, this.checkHandler);
+      window.removeEventListener(eName, this.checkHandler);
     });
 
     this.setted = false;

@@ -1,0 +1,84 @@
+@keyframes show-from-left {
+  from {
+    transform: translate(-50px, 0);
+    opacity: 1%;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+@keyframes show-from-right {
+  from {
+    transform: translate(50px, 0);
+    opacity: 1%;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+@keyframes show-from-top {
+  from {
+    transform: translate(0, -50px);
+    opacity: 1%;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+@keyframes show-from-bottom {
+  from {
+    transform: translate(0, 50px);
+    opacity: 1%;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 1%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@supports (animation: a) and (animation-fill-mode: both) {
+  .animated {
+    opacity: 0%;
+    animation-fill-mode: both;
+  }
+}
+
+.show-from-left {
+  animation-name: show-from-left;
+  animation-duration: 2s;
+}
+
+.show-from-right {
+  animation-name: show-from-right;
+  animation-duration: 2s;
+}
+
+.show-from-top {
+  animation-name: show-from-top;
+  animation-duration: 2s;
+}
+
+.show-from-bottom {
+  animation-name: show-from-bottom;
+  animation-duration: 2s;
+}
+
+.show {
+  animation-name: show;
+  animation-duration: 2s;
+}
