@@ -46,3 +46,7 @@ export class OnVisibilityChange {
     this.setted = false;
   }
 }
+
+export function mw(minWidth: number) {
+  return window.matchMedia(`(min-width: ${minWidth}px)`).matches;
+}

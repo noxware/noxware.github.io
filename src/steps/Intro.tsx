@@ -1,35 +1,92 @@
 import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
+
 import AnimatedFCE from '../components/AnimatedFCE';
+import {bigCode, smallCode} from '../data/intro';
 
-const bigCode = `%k%import %d%api%x%, {%d%decrypt%x%} %k%from %s%'api'%x%;
- 
-%k%async function %d%main%x%() {
-  %k%const %d%data %o%= %k%await %v%api%x%.%p%get%x%(%s%'data'%x%);
-  %k%const %d%decryptedData %o%= %v%data%x%.%p%map%x%(%d%d %o%=> %v%decrypt%x%(%v2%d%x%));
-  %k%const %d%awesomeData %o%= %v%decryptedData%x%.%p%filter%x%(%d%d %o%=> %v2%d%x%.%p%type %o%== %s%'awesome'%x%);
-   
-  %k%for %x%(%k%const %d%d %k%of %v%awesomeData%x%)
-    %k%if %x%(%v2%d%x%.%p%wisdom%x%)
-      %v%console%x%.%p%log%x%(%v2%d%x%.%p%wisdom%x%);
-}
- 
-%v%main%x%();
- 
-%c%// Output: This Javascript animation looks nice!`;
+const Container = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
+  color: white;
+  /*height: 90vh;*/
+  width: 100%;
 
-const smallCode = `%k%import %x%{%d%get%x%} %k%from %s%'api'%x%;
- 
-%k%async function %d%main%x%() {
-  %k%const %d%data %o%= %k%await %v%get%x%(%s%'data'%x%);
-   
-  %k%for %x%(%k%const %d%d %k%of %v%data%x%)
-    %k%if %x%(%v2%d%x%.%p%wisdom%x%)
-      %v%console%x%.%p%log%x%(%v2%d%x%.%p%wisdom%x%);
-}
- 
-%v%main%x%();
- 
-%c%/* Output: This Javascript animation is different and better in a device with higher resolution, like a desktop computer. */`;
+  padding: 1rem;
+  /*min-height: 85vh;*/
+  min-height: 100vh;
+
+  @media (min-width: 600px) {
+    padding: 2rem;
+    /*height: 100vh;*/
+  }
+`
+
+const Title = styled.h1`
+  font-size: 2.2em;  
+  margin-bottom: 1rem;
+
+  @media (min-width: 500px) {
+    font-size: 2.8em;
+  }
+
+  @media (min-width: 600px) {
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 730px) {
+    font-size: 3.2em;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 4em;
+    margin-bottom: 3rem;
+  }
+`
+
+const Subtitle = styled.h2`
+  text-align: center;
+  color: #c4ced7;
+
+  font-size: 1em;
+  margin-bottom: 1rem;
+
+  @media (min-width: 500px) {
+    font-size: 1.2em;
+  }
+
+  @media (min-width: 600px) {
+    margin-bottom: 2rem;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 1.7em;
+  }
+
+  @media (min-width: 1280px) {
+    font-size: 1.8em;
+    margin-bottom: 3rem;
+  }
+`
+
+const DemoCode = styled(AnimatedFCE)`
+  width: 100%;
+  .code {
+    font-size: 13px;
+  }
+
+  @media (min-width: 600px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 730px) {
+    .code {
+      font-size: 16px;
+    }
+  }
+`
 
 export default function () {
   const getCode = () => window.innerWidth < 600 ? smallCode : bigCode;
@@ -46,10 +103,10 @@ export default function () {
   }, []);
 
   return (
-    <section className='intro step'>
-      <h1 className='title'>Franco Profeti</h1>
-      <h2 className='subtitle'>Developer from Uruguay passionate about open source technologies</h2>
-      <AnimatedFCE code={code} cursor='%i%' speed={20} />
-    </section>
+    <Container className='intro'>
+      <Title className='title'>Franco Profeti</Title>
+      <Subtitle className='subtitle'>Developer from Uruguay passionate about open source technologies</Subtitle>
+      <DemoCode code={code} cursor='%i%' speed={20} />
+    </Container>
   );
 }

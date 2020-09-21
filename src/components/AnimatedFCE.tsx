@@ -26,6 +26,7 @@ interface Props {
   code: string;
   cursor: string;
   speed: number;
+  className?: string;
 }
 
 export default function (props: Props) {
@@ -72,7 +73,7 @@ export default function (props: Props) {
     let i = window.setTimeout(animationHandler, props.speed);
 
     return () => clearTimeout(i);
-  }, [props.code]);
+  }, [props.code, props.speed, props.cursor]);
 
-  return <FakeCodeEditor code={height? currentCode : props.code} ref={editorRef} style={height ? {height: height} : undefined} />
+  return <FakeCodeEditor className={`animated-fce ${props.className}`} code={height? currentCode : props.code} ref={editorRef} style={height ? {height: height} : undefined} />
 }
