@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import AnimatedFCE from '../components/AnimatedFCE';
-import {bigCode, smallCode} from '../data/intro';
+import CODES from '../data/code-animation.yaml';
 
 const Container = styled.section`
   display: flex;
@@ -10,7 +10,7 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
-  color: white;
+  color: #ffffff;
   /*height: 90vh;*/
   width: 100%;
 
@@ -89,7 +89,7 @@ const DemoCode = styled(AnimatedFCE)`
 `
 
 export default function () {
-  const getCode = () => window.innerWidth < 600 ? smallCode : bigCode;
+  const getCode: () => string = () => window.innerWidth < 600 ? CODES.smallCode : CODES.bigCode;
 
   const [code, setCode] = useState(getCode());
 

@@ -1,9 +1,10 @@
+import React from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 
-import React from 'react';
 import Intro from './steps/Intro';
 import About from './steps/About';
 import Skills from './steps/Skills';
+import Contact from './steps/Contact';
 
 const ResetStyles = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -80,6 +81,8 @@ const Main = styled.main`
   flex-direction: column;
 `
 
+
+
 function App() {
   return (
     <React.Fragment>
@@ -89,9 +92,9 @@ function App() {
         <Intro />
         <About />
         <Skills />
+        <Contact />
       </Main>
     </React.Fragment>
-    
   );
 }
 
