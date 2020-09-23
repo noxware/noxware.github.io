@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import styled from 'styled-components';
 
 import AnimatedFCE from '../components/AnimatedFCE';
 import CODES from '../data/code-animation.yaml';
+import Language from '../contexts/language';
 
 const Container = styled.section`
   display: flex;
@@ -89,6 +90,7 @@ const DemoCode = styled(AnimatedFCE)`
 `
 
 export default function () {
+  const s = useContext(Language);
   const getCode: () => string = () => window.innerWidth < 600 ? CODES.smallCode : CODES.bigCode;
 
   const [code, setCode] = useState(getCode());
@@ -104,8 +106,8 @@ export default function () {
 
   return (
     <Container className='intro'>
-      <Title className='title'>Franco Profeti</Title>
-      <Subtitle className='subtitle'>Developer from Uruguay passionate about open source technologies</Subtitle>
+      <Title className='title'>{s.intro.title}</Title>
+      <Subtitle className='subtitle'>{s.intro.subtitle}</Subtitle>
       <DemoCode code={code} cursor='%i%' speed={20} />
     </Container>
   );

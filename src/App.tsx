@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 
 import Intro from './steps/Intro';
 import About from './steps/About';
 import Skills from './steps/Skills';
-import Contact from './steps/Contact';
+import Links from './steps/Links';
+import Language from './steps/Language';
+
+import LanguageContext from './contexts/language';
+import strings from './data/strings.yaml';
+
 
 const ResetStyles = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -84,17 +89,31 @@ const Main = styled.main`
 
 
 function App() {
+  const [lang, setLang] = useState(window.localStorage.getItem('lang') || '');
+
+console.log(lang);
+  const currentLang = strings[lang] || {};
+  currentLang.setLang = (l: string) => setLang(l);
+  console.table(currentLang);
   return (
-    <React.Fragment>
-      <ResetStyles />
-      <BaseStyles />
-      <Main>
-        <Intro />
-        <About />
-        <Skills />
-        <Contact />
-      </Main>
-    </React.Fragment>
+    <LanguageContext.Provider value={currentLang}>
+        <ResetStyles />
+        <BaseStyles />
+        <Main>
+          {
+            (lang === '') ? 
+              <Language />
+            :
+              <>
+                <Intro />
+                <About />
+                <Skills />
+                <Links />
+              </>
+          }
+          
+        </Main>
+    </LanguageContext.Provider>
   );
 }
 

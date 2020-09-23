@@ -6,25 +6,29 @@ const Container = styled.button`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  padding: 1.5rem;
   margin: 0.4em;
   border-radius: 10%;
-  border: 1px solid rgb(219, 219, 219);
-  background-color: #ffffff;
+  border: none;
+  background-color: #333333;
   font-family: Helvetica, Arial, sans-serif;
-  height: 150px;
-  width: 130px;
+  color: inherit;
+
+  &:hover {
+    background-color: #555555;
+  }
 `
 
 const Image = styled.img`
   height: 64px;
-  width: 64px;
+  width: 80px;
 `
 
 const Name = styled.span`
   margin-top: 1em;
-  font-size: 0.9em;
+  font-size: 1em;
   text-align: center;
+
 `
 
 

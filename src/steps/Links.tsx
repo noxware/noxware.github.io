@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+
+import Language from '../contexts/language';
 
 const Container = styled.section`
   display: flex;
@@ -23,22 +25,30 @@ const Title = styled.h1`
 `
 
 const Link = styled.a`
-  font-size: 1.1em;
+  font-size: 0.8em;
   text-decoration: none;
   color: #4CAF50;
+
+  @media (min-width: 420px) {
+    font-size: 1.1em;
+  }
 `
 
 const LangSwitch = styled.button`
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 0.8em;
   margin-top: 2rem;
   border-radius: 5px;
+
+  @media (min-width: 420px) {
+    font-size: 1em;
+  }
 `
 
 const FlexBreak = styled.div`
@@ -47,9 +57,13 @@ const FlexBreak = styled.div`
 `
 
 const BaseSeparator = styled.span`
-  font-size: 1.1em;
+  font-size: 0.8em;
   margin-right: 1em;
   margin-left: 1em;
+  
+  @media (min-width: 420px) {
+    font-size: 1.1em;
+  }
 `
 
 function Separator() {
@@ -57,9 +71,11 @@ function Separator() {
 }
 
 export default function () {
+  const s = useContext(Language);
+
   return (
     <Container>
-      <Title>Links and contact</Title>
+      <Title>{s.links.title}</Title>
 
       <FlexBreak />
       <Link href='mailto:fprofeti98@gmail.com'>E-Mail (fprofeti98@gmail.com)</Link>
@@ -67,7 +83,7 @@ export default function () {
       <Link href='https://github.com/Noxware'>Github</Link>
 
       <FlexBreak />
-      <LangSwitch>Switch language</LangSwitch>
+      <LangSwitch onClick={()=>s.setLang('')}>{s.links.switch}</LangSwitch>
     </Container>
   );
 }

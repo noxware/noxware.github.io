@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import VSensor from 'react-visibility-sensor';
 import styled, { FlattenSimpleInterpolation } from 'styled-components';
 import {mw} from '../lib/util';
 import {showFromLeftPreset, showFromRightPreset, showFromBottomPreset} from '../animations/presets';
 import CircularImage from '../components/CircularImage';
+import Language from '../contexts/language';
 
 const Container = styled.section`
   display: flex;
@@ -13,8 +14,9 @@ const Container = styled.section`
 
   padding: 2rem;
 
-  @media (min-width: 600px) {
-
+  @media (min-width: 730px) {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 `
 
@@ -24,14 +26,6 @@ const Title = styled.h1`
 
   @media (min-width: 600px) {
     font-size: 2.2em;
-  }
-
-  @media (min-width: 730px) {
-
-  }
-
-  @media (min-width: 1280px) {
-
   }
 `
 
@@ -45,14 +39,6 @@ const SpeakContainer = styled.div`
     flex-direction: row;
     align-items: center;
     max-width: 1000px;
-  }
-
-  @media (min-width: 1000px) {
-
-  }
-
-  @media (min-width: 1280px) {
-
   }
 `
 
@@ -120,28 +106,23 @@ const Photo = styled(CircularImage).attrs<AnimatedProps>(props => {
 export default () => {
   const [animated, setAnimated] = useState(false);
   const visibilityHandler = (visible: boolean) => visible && setAnimated(true);
+  const s = useContext(Language);
   
   return (
     <Container className='about step'>
-      <Title className='title'>About me</Title>
+      <Title className='title'>{s.about.title}</Title>
         <VSensor onChange={visibilityHandler} partialVisibility>
           <SpeakContainer className='speak'>
             <Photo animated={animated} alt='cat' src='https://www.miamiherald.com/living/pets/g4tdgu/picture135751113/alternates/FREE_1140/dribbling-cat'/>
             <ParagraphContainer animated={animated}>
               <Paragraph>
-                I am a 21 years old developer from Uruguay who has been interested in programming since young.
-                I had my first contact with the world of programming at the age of 12 and I began to learn how to
-                program for real at the age of 15 thanks to the help of 2 friends who taught me about
-                open source software.
+                {s.about.paragraphs[0]}
               </Paragraph>
               <Paragraph>
-                From there, I started to learn all kinds of things that interested me, from web development to
-                assembly language and electronics.
+                {s.about.paragraphs[1]}
               </Paragraph>
               <Paragraph>
-                I love programming and I am always learning things as I need them for something.
-                Learning new things related to technology is always a pleasure.
-                The satisfaction of seeing something created by oneself, working, is indescribable.
+                {s.about.paragraphs[2]}
               </Paragraph>
             </ParagraphContainer>
           </SpeakContainer>

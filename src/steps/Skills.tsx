@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import VSensor from 'react-visibility-sensor';
 import styled from 'styled-components';
 
@@ -9,12 +9,18 @@ import libs from '../data/skills-libs.json';
 
 import {showFromBottomPreset} from '../animations/presets';
 
+import Language from '../contexts/language';
+
 const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
 
   padding: 1rem;
+
+  @media (min-width: 730px) {
+    padding-bottom: 7rem;
+  }
 `
 
 const Title = styled.h1`
@@ -23,10 +29,6 @@ const Title = styled.h1`
 
   @media (min-width: 600px) {
     font-size: 2.2em;
-  }
-
-  @media (min-width: 1000px) {
-    font-size: 2.2em; /***************/
   }
 `
 
@@ -103,6 +105,8 @@ const Item = styled(SkillItem)`
 // TODO: styled-components here
 
 export default function () {
+  const s = useContext(Language);
+
   const [animatedLangs, setAnimatedLangs] = useState(false);
   const [animatedLibs, setAnimatedLibs] = useState(false);
 
@@ -111,11 +115,11 @@ export default function () {
 
   return (
     <Container className='skills step'>
-      <Title className='title'>Skills</Title>
+      <Title className='title'>{s.skills.title}</Title>
 
       <VSensor onChange={langsHandler} partialVisibility>
         <CategoryContainer className={`category`} animated={animatedLangs}>
-          <CategoryTitle className='subtitle'>Programming and markup languages</CategoryTitle>
+          <CategoryTitle className='subtitle'>{s.skills.langs.title}</CategoryTitle>
           <ItemsContainer className="items">
             {langs.map(l => <Item key={l.title} icon={l.icon} title={l.title}/>)}
           </ItemsContainer>
@@ -125,7 +129,7 @@ export default function () {
 
       <VSensor onChange={libsHandler} partialVisibility>
         <CategoryContainer className={`category`} animated={animatedLibs}>
-          <CategoryTitle className='subtitle'>Libraries and frameworks</CategoryTitle>
+          <CategoryTitle className='subtitle'>{s.skills.libs.title}</CategoryTitle>
           <ItemsContainer className="items">
             {libs.map(l => <Item key={l.title} icon={l.icon} title={l.title}/>)}
           </ItemsContainer>
