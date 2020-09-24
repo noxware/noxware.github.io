@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.js": "/static/js/main.3fe4429b.chunk.js",
+    "main.js.map": "/static/js/main.3fe4429b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.50ed05b9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.50ed05b9.js.map",
+    "static/js/2.7a1dbb67.chunk.js": "/static/js/2.7a1dbb67.chunk.js",
+    "static/js/2.7a1dbb67.chunk.js.map": "/static/js/2.7a1dbb67.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.126434d1685dffd7afcff039f80670d0.js": "/precache-manifest.126434d1685dffd7afcff039f80670d0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.7a1dbb67.chunk.js.LICENSE.txt": "/static/js/2.7a1dbb67.chunk.js.LICENSE.txt",
+    "static/media/Arduino.svg": "/static/media/Arduino.6fa02da1.svg",
+    "static/media/Bash.svg": "/static/media/Bash.5f0e74a1.svg",
+    "static/media/C#.svg": "/static/media/C#.bdaccca2.svg",
+    "static/media/C++.svg": "/static/media/C++.c64a068e.svg",
+    "static/media/C.svg": "/static/media/C.00cc5bdb.svg",
+    "static/media/CSS.svg": "/static/media/CSS.e788f0ec.svg",
+    "static/media/Gimp.svg": "/static/media/Gimp.dac6068b.svg",
+    "static/media/Git.svg": "/static/media/Git.64d5e98f.svg",
+    "static/media/HTML.svg": "/static/media/HTML.1f4630ca.svg",
+    "static/media/Java.svg": "/static/media/Java.a732a6e5.svg",
+    "static/media/Javascript.svg": "/static/media/Javascript.87711407.svg",
+    "static/media/Linux.svg": "/static/media/Linux.2e82d079.svg",
+    "static/media/Lua.svg": "/static/media/Lua.33743237.svg",
+    "static/media/MySQL.svg": "/static/media/MySQL.dd2a5a35.svg",
+    "static/media/Node.js.svg": "/static/media/Node.js.94cafb0d.svg",
+    "static/media/PostgreSQL.svg": "/static/media/PostgreSQL.d7c985e7.svg",
+    "static/media/Puppeteer.svg": "/static/media/Puppeteer.8557d1d2.svg",
+    "static/media/Python.svg": "/static/media/Python.51c2eab2.svg",
+    "static/media/Qt.svg": "/static/media/Qt.a1f299f2.svg",
+    "static/media/Raspberry Pi.svg": "/static/media/Raspberry Pi.7eb0d22d.svg",
+    "static/media/React Native.svg": "/static/media/React Native.ee61ca49.svg",
+    "static/media/React.svg": "/static/media/React.ee61ca49.svg",
+    "static/media/Selenium.svg": "/static/media/Selenium.de37387d.svg",
+    "static/media/Typescript.svg": "/static/media/Typescript.9e8bfce4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50ed05b9.js",
+    "static/js/2.7a1dbb67.chunk.js",
+    "static/js/main.3fe4429b.chunk.js"
+  ]
+}
