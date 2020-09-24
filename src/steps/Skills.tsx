@@ -4,8 +4,7 @@ import styled from 'styled-components';
 
 import SkillItem from '../components/SkillItem';
 
-import langs from '../data/skills-langs.json';
-import libs from '../data/skills-libs.json';
+import {langs, libs} from '../data/skills';
 
 import {showFromBottomPreset} from '../animations/presets';
 
@@ -121,7 +120,7 @@ export default function () {
         <CategoryContainer className={`category`} animated={animatedLangs}>
           <CategoryTitle className='subtitle'>{s.skills.langs.title}</CategoryTitle>
           <ItemsContainer className="items">
-            {langs.map(l => <Item key={l.title} icon={l.icon} title={l.title}/>)}
+            {langs.map(l => <Item key={l.name} icon={l.image} title={l.name}/>)}
           </ItemsContainer>
           
         </CategoryContainer>
@@ -131,7 +130,7 @@ export default function () {
         <CategoryContainer className={`category`} animated={animatedLibs}>
           <CategoryTitle className='subtitle'>{s.skills.libs.title}</CategoryTitle>
           <ItemsContainer className="items">
-            {libs.map(l => <Item key={l.title} icon={l.icon} title={l.title}/>)}
+            {libs.map(l => <Item key={l.name} icon={l.image} title={l.name} />)}
           </ItemsContainer>
         </CategoryContainer>
       </VSensor>

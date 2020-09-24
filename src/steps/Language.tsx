@@ -36,7 +36,6 @@ const FlexBreak = styled.div`
 
 export default function () {
   const lang = useContext(LanguageContext);
-  console.table(lang);
 
 
   return (
@@ -60,7 +59,6 @@ export default function () {
           () => {
             window.localStorage.setItem('lang', 'es');
             lang.setLang('es');
-            console.log(window.localStorage.getItem('lang'));
           }
         } />
     </Container>

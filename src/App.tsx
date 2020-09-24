@@ -91,10 +91,9 @@ const Main = styled.main`
 function App() {
   const [lang, setLang] = useState(window.localStorage.getItem('lang') || '');
 
-console.log(lang);
   const currentLang = strings[lang] || {};
   currentLang.setLang = (l: string) => setLang(l);
-  console.table(currentLang);
+
   return (
     <LanguageContext.Provider value={currentLang}>
         <ResetStyles />

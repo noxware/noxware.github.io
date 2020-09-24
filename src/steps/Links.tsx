@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import Language from '../contexts/language';
 
+import {langs} from '../data/skills';
+
 const Container = styled.section`
   display: flex;
   flex-direction: row;
@@ -72,7 +74,8 @@ function Separator() {
 
 export default function () {
   const s = useContext(Language);
-
+  const n = (a: any) => {console.table(a)};
+  n(langs);
   return (
     <Container>
       <Title>{s.links.title}</Title>

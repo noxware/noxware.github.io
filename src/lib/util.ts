@@ -50,3 +50,14 @@ export class OnVisibilityChange {
 export function mw(minWidth: number) {
   return window.matchMedia(`(min-width: ${minWidth}px)`).matches;
 }
+
+/*export function importAll (r: __WebpackModuleApi.RequireContext) {
+  r.keys().forEach(r);
+  r.keys().forEach((e)=>console.log(e));
+}*/
+
+export function importAll(r: __WebpackModuleApi.RequireContext) {
+  return r.keys().map(r);
+}
+
+//console.table(importAll(require.context('../data/', false)));

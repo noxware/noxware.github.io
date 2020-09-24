@@ -1,0 +1,3 @@
+files like: Name@desc.svg
+use webpack context to load folder
+generete object with image path and extracted name and desc. Handle hashing?
