@@ -11,7 +11,7 @@ export function showFromPresetFactory(keyframes: Keyframes, duration: number, fa
   `;
 }
 
-export const showFromLeftPreset = showFromPresetFactory(kfs.showFromLeft, 1.7, 100);
-export const showFromRightPreset = showFromPresetFactory(kfs.showFromRight, 1.7, 100);
-export const showFromTopPreset = showFromPresetFactory(kfs.showFromTop, 1.7, 100);
-export const showFromBottomPreset = showFromPresetFactory(kfs.showFromBottom, 1.7, 100);
+export const showFromLeftPreset = showFromPresetFactory(kfs.showFromLeft, 2, 100);
+export const showFromRightPreset = showFromPresetFactory(kfs.showFromRight, 2, 100);
+export const showFromTopPreset = showFromPresetFactory(kfs.showFromTop, 2, 100);
+export const showFromBottomPreset = showFromPresetFactory(kfs.showFromBottom, 2, 100);

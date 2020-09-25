@@ -35,7 +35,7 @@ en:
           desc: Native
         - id: en
           name: English
-          desc: Good
+          desc: Excellent
   
   links:
     title: Links and contact
@@ -77,7 +77,7 @@ es:
           desc: Nativo
         - id: en
           name: Ingles
-          desc: Bueno
+          desc: Excelente
   
   links:
     title: Enlaces y contacto
