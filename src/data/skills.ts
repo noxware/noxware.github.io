@@ -1,3 +1,5 @@
+import strings from './strings.yaml';
+
 /**
  * Represents the final data.
  */
@@ -42,32 +44,68 @@ function encodeRef(url: string) {
   return encodeURIComponent(url.replace(/\//g, '_slash_')).replace(/_slash_/g, '/');
 }
 
-// Load contexts (can't use require.context inside other functions so I will proccess everything separatly)
-const langsContext = require.context('../assets/langs', false);
-const libsContext = require.context('../assets/libs', false);
-const otherContext = require.context('../assets/other', false);
-const hlangsContext = require.context('../assets/hlangs', false);
+function skillDataFromContext(ctx: __WebpackModuleApi.RequireContext) {
+  const keys = ctx.keys();
+  const files = keys.map(k => encodeRef(ctx(k))) as string[];
+  const text = keys.map(skillTextFromKey);
 
-// Keys are the original filepath (ej: ./ex.svg)
-const langsKeys = langsContext.keys();
-const libsKeys = libsContext.keys();
-const otherKeys = otherContext.keys();
-const hlangsKeys = hlangsContext.keys();
+  return text.map((t, i) => new SkillData(files[i], t.name, t.desc));
+}
 
-// Import all files (return arrays of final filepaths)
-const langsFiles = langsKeys.map(k => encodeRef(langsContext(k))) as string[];
-const libsFiles = libsKeys.map(k => encodeRef(libsContext(k))) as string[];
-const otherFiles = otherKeys.map(k => encodeRef(otherContext(k))) as string[];
-const hlangsFiles = hlangsKeys.map(k => encodeRef(hlangsContext(k))) as string[];
+export const langs = skillDataFromContext(require.context('../assets/langs', false));
+export const libs = skillDataFromContext(require.context('../assets/libs', false));
+export const other = skillDataFromContext(require.context('../assets/other', false));
 
-// Get skill text
-const langsText = langsKeys.map(skillTextFromKey);
-const libsText = libsKeys.map(skillTextFromKey);
-const otherText = otherKeys.map(skillTextFromKey);
-const hlangsText = hlangsKeys.map(skillTextFromKey);
+interface TextSrc {
+ [k: string]: SkillText;
+}
 
-// Fill exports
-export const langs = langsText.map((t, i) => new SkillData(langsFiles[i], t.name, t.desc));
-export const libs = libsText.map((t, i) => new SkillData(libsFiles[i], t.name, t.desc));
-export const other = otherText.map((t, i) => new SkillData(otherFiles[i], t.name, t.desc));
-export const hlangs = hlangsText.map((t, i) => new SkillData(hlangsFiles[i], t.name, t.desc));
+interface SkillsToTextSrc {
+  [k: string]: TextSrc;
+}
+
+interface LangToSkills {
+  [k: string]: SkillsToTextSrc
+}
+
+const customTexts: LangToSkills = {};
+// customText['en']['hlangs'][id]: SkillText+id
+
+Object.entries(strings).forEach(([langKey, lang]: [string, any]) => {
+  customTexts[langKey] = {};
+
+  Object.entries(lang.skills).forEach(([skillKey, skill]: [string, any]) => {
+    customTexts[langKey][skillKey] = {};
+
+    if (skill.items) {
+      skill.items.forEach((i: SkillText & {id: string}) => {
+        customTexts[langKey][skillKey][i.id] = i;
+      });
+    }
+  });
+})
+
+function skillDataFromContextAndTextSrc(ctx: __WebpackModuleApi.RequireContext, textsrc: TextSrc) {
+  const keys = ctx.keys();
+  const files = keys.map(k => encodeRef(ctx(k))) as string[];
+
+  const ids = keys.map(k => skillTextFromKey(k).name);
+
+  return ids.map((id, i) => new SkillData(files[i], textsrc[id].name, textsrc[id].desc));
+}
+
+interface LangsToSkillDataArray {
+  [k: string]: SkillData[];
+}
+
+function langsToDataSrcFromContextAndSkill(ctx: __WebpackModuleApi.RequireContext, skill: string) {
+  const res: LangsToSkillDataArray = {};
+
+  Object.keys(customTexts).forEach(lang => {
+    res[lang] = skillDataFromContextAndTextSrc(ctx, customTexts[lang][skill]);
+  });
+
+  return res;
+}
+
+export const hlangs: LangsToSkillDataArray = langsToDataSrcFromContextAndSkill(require.context('../assets/hlangs', false), 'hlangs');

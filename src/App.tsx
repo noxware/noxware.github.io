@@ -93,6 +93,7 @@ function App() {
 
   const currentLang = strings[lang] || {};
   currentLang.setLang = (l: string) => setLang(l);
+  currentLang.currentLangKey = lang;
 
   return (
     <LanguageContext.Provider value={currentLang}>

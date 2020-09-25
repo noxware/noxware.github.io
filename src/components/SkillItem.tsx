@@ -18,7 +18,7 @@ const Container = styled.div`
 
 const Image = styled.img`
   height: 64px;
-  width: 64px;
+  width: 64px; /*64*/
   object-fit: scale-down;
 `
 

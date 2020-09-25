@@ -26,9 +26,16 @@ en:
     libs:
       title: Libraries and frameworks
     other:
-      title: ''
+      title: Others
     hlangs:
-      title: ''
+      title: Human languages
+      items:
+        - id: es
+          name: Spanish
+          desc: Native
+        - id: en
+          name: English
+          desc: Good
   
   links:
     title: Links and contact
@@ -61,9 +68,16 @@ es:
     libs:
       title: Librerias y frameworks
     other:
-      title: ''
+      title: Otros
     hlangs:
-      title: ''
+      title: Lenguajes humanos
+      items:
+        - id: es
+          name: Español
+          desc: Nativo
+        - id: en
+          name: Ingles
+          desc: Bueno
   
   links:
     title: Enlaces y contacto

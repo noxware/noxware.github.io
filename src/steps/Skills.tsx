@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import SkillItem from '../components/SkillItem';
 
-import {langs, libs} from '../data/skills';
+import {langs, libs, other, hlangs} from '../data/skills';
 
 import {showFromBottomPreset} from '../animations/presets';
 
@@ -95,45 +95,44 @@ const Item = styled(SkillItem)`
     width: 120px;
 
     .image {
-      height: 55px;
+      height: 55px; /*55*/
       width: 55px;
     }
   }
 `
 
-// TODO: styled-components here
+interface CategoryProps {
+  datasrc: typeof langs;
+  children: React.ReactNode;
+}
+
+function Category({datasrc, children}: CategoryProps) {
+  const [animated, setAnimated] = useState(false);
+  const visibilityHandler = (visible: boolean) => visible && setAnimated(true);
+
+  return (
+    <VSensor onChange={visibilityHandler} partialVisibility>
+      <CategoryContainer animated={animated}>
+        <CategoryTitle>{children}</CategoryTitle>
+        <ItemsContainer>
+          {datasrc.map(i => <Item key={i.name} icon={i.image} title={i.name} text={i.desc}/>)}
+        </ItemsContainer>
+      </CategoryContainer>
+    </VSensor>
+  );
+}
 
 export default function () {
   const s = useContext(Language);
-
-  const [animatedLangs, setAnimatedLangs] = useState(false);
-  const [animatedLibs, setAnimatedLibs] = useState(false);
-
-  const langsHandler = (visible: boolean) => visible && setAnimatedLangs(true);
-  const libsHandler = (visible: boolean) => visible && setAnimatedLibs(true);
 
   return (
     <Container className='skills step'>
       <Title className='title'>{s.skills.title}</Title>
 
-      <VSensor onChange={langsHandler} partialVisibility>
-        <CategoryContainer className={`category`} animated={animatedLangs}>
-          <CategoryTitle className='subtitle'>{s.skills.langs.title}</CategoryTitle>
-          <ItemsContainer className="items">
-            {langs.map(l => <Item key={l.name} icon={l.image} title={l.name}/>)}
-          </ItemsContainer>
-          
-        </CategoryContainer>
-      </VSensor>
-
-      <VSensor onChange={libsHandler} partialVisibility>
-        <CategoryContainer className={`category`} animated={animatedLibs}>
-          <CategoryTitle className='subtitle'>{s.skills.libs.title}</CategoryTitle>
-          <ItemsContainer className="items">
-            {libs.map(l => <Item key={l.name} icon={l.image} title={l.name} />)}
-          </ItemsContainer>
-        </CategoryContainer>
-      </VSensor>
+      <Category datasrc={langs}>{s.skills.langs.title}</Category>
+      <Category datasrc={libs}>{s.skills.libs.title}</Category>
+      <Category datasrc={other}>{s.skills.other.title}</Category>
+      <Category datasrc={hlangs[s.currentLangKey]}>{s.skills.hlangs.title}</Category>
     </Container>
   );
 }
