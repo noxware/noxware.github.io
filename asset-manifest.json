@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.f1769a93.chunk.js",
-    "main.js.map": "/static/js/main.f1769a93.chunk.js.map",
+    "main.js": "/static/js/main.8af147de.chunk.js",
+    "main.js.map": "/static/js/main.8af147de.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.50ed05b9.js",
     "runtime-main.js.map": "/static/js/runtime-main.50ed05b9.js.map",
     "static/js/2.7b73f0e0.chunk.js": "/static/js/2.7b73f0e0.chunk.js",
     "static/js/2.7b73f0e0.chunk.js.map": "/static/js/2.7b73f0e0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cc61bdb316289bb9513ff69449f727fc.js": "/precache-manifest.cc61bdb316289bb9513ff69449f727fc.js",
+    "precache-manifest.c5990d02127dd78bc87baa3de5d4f24f.js": "/precache-manifest.c5990d02127dd78bc87baa3de5d4f24f.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.7b73f0e0.chunk.js.LICENSE.txt": "/static/js/2.7b73f0e0.chunk.js.LICENSE.txt",
     "static/media/Arduino.svg": "/static/media/Arduino.6fa02da1.svg",
@@ -33,8 +33,12 @@
     "static/media/Raspberry Pi.svg": "/static/media/Raspberry Pi.571d43e8.svg",
     "static/media/React Native.svg": "/static/media/React Native.2bc32987.svg",
     "static/media/React.svg": "/static/media/React.2bc32987.svg",
+    "static/media/SQL.svg": "/static/media/SQL.7ef81265.svg",
+    "static/media/Sass.svg": "/static/media/Sass.8e766e95.svg",
     "static/media/Selenium.svg": "/static/media/Selenium.de37387d.svg",
+    "static/media/Styled Components.png": "/static/media/Styled Components.05b9e1f9.png",
     "static/media/Typescript.svg": "/static/media/Typescript.f6f43066.svg",
+    "static/media/XML.svg": "/static/media/XML.94127870.svg",
     "static/media/en.svg": "/static/media/en.67b26caa.svg",
     "static/media/es.svg": "/static/media/es.3e1113f9.svg",
     "static/media/me.jpg": "/static/media/me.32cea650.jpg"
@@ -42,6 +46,6 @@
   "entrypoints": [
     "static/js/runtime-main.50ed05b9.js",
     "static/js/2.7b73f0e0.chunk.js",
-    "static/js/main.f1769a93.chunk.js"
+    "static/js/main.8af147de.chunk.js"
   ]
 }
