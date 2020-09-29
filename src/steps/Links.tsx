@@ -19,7 +19,6 @@ const Container = styled.section`
 
 const Title = styled.h1`
   font-size: 1.7em;
-  margin-bottom: 2rem;
 
   @media (min-width: 600px) {
     font-size: 2.2em;
@@ -27,17 +26,12 @@ const Title = styled.h1`
 `
 
 const Link = styled.a`
-  font-size: 0.8em;
   text-decoration: none;
   color: #4CAF50;
-
-  @media (min-width: 420px) {
-    font-size: 1.1em;
-  }
 `
 
 const LangSwitch = styled.button`
-  background-color: #4CAF50; /* Green */
+  background-color: rgb(76, 175, 80); /* Green */
   border: none;
   color: white;
   padding: 1rem 2rem;
@@ -45,11 +39,14 @@ const LangSwitch = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 0.8em;
-  margin-top: 2rem;
   border-radius: 5px;
 
   @media (min-width: 420px) {
     font-size: 1em;
+  }
+
+  &:hover {
+    background-color: rgb(86, 185, 90);
   }
 `
 
@@ -58,32 +55,63 @@ const FlexBreak = styled.div`
   height: 0;
 `
 
-const BaseSeparator = styled.span`
-  font-size: 0.8em;
-  margin-right: 1em;
-  margin-left: 1em;
+const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   
-  @media (min-width: 420px) {
-    font-size: 1.1em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
   }
 `
 
-function Separator() {
-  return <BaseSeparator>|</BaseSeparator>
+const Item = styled.li`
+  font-size: 0.8em;
+  margin: 0.3rem;
+
+  @media (min-width: 420px) {
+    font-size: 1em;
+  }
+
+  @media (min-width: 900px) {
+    margin: 0;
+
+    &::before {
+      display: inline-block;
+      content: '|';
+      margin-right: 1em;
+      margin-left: 1em;
+    }
+
+    &:first-of-type::before {
+        display: none;
+    }
+  }
+`
+
+function ItemWithLink(props: any) {
+  return <Item><Link {...props} /></Item>
 }
 
 export default function () {
   const s = useContext(Language);
-  const n = (a: any) => {console.table(a)};
-  n(langs);
+https://github.com/Noxware/noxware.github.io
   return (
     <Container>
       <Title>{s.links.title}</Title>
 
       <FlexBreak />
-      <Link href='mailto:fprofeti98@gmail.com'>E-Mail (fprofeti98@gmail.com)</Link>
-      <Separator />
-      <Link href='https://github.com/Noxware'>Github</Link>
+      <List>
+        <ItemWithLink href='mailto:fprofeti98@gmail.com'>Email (fprofeti98@gmail.com)</ItemWithLink>
+        <ItemWithLink href='https://github.com/Noxware'>Github</ItemWithLink>
+        <ItemWithLink href='https://github.com/Noxware/noxware.github.io'>{s.links.thisPage}</ItemWithLink>
+      </List>
+      
 
       <FlexBreak />
       <LangSwitch onClick={()=>s.setLang('')}>{s.links.switch}</LangSwitch>

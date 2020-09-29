@@ -1,10 +1,14 @@
 import React, { useState, useContext } from 'react';
-import VSensor from 'react-visibility-sensor';
 import styled, { FlattenSimpleInterpolation } from 'styled-components';
+import VSensor from 'react-visibility-sensor';
+
 import {mw} from '../lib/util';
 import {showFromLeftPreset, showFromRightPreset, showFromBottomPreset} from '../animations/presets';
+
 import CircularImage from '../components/CircularImage';
+
 import Language from '../contexts/language';
+import me from '../assets/about-me/me.jpg';
 
 const Container = styled.section`
   display: flex;
@@ -113,7 +117,7 @@ export default () => {
       <Title className='title'>{s.about.title}</Title>
         <VSensor onChange={visibilityHandler} partialVisibility>
           <SpeakContainer className='speak'>
-            <Photo animated={animated} alt='cat' src='https://www.miamiherald.com/living/pets/g4tdgu/picture135751113/alternates/FREE_1140/dribbling-cat'/>
+            <Photo animated={animated} alt='cat' src={me}/>
             <ParagraphContainer animated={animated}>
               <Paragraph>
                 {s.about.paragraphs[0]}

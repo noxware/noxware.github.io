@@ -3,11 +3,9 @@ import VSensor from 'react-visibility-sensor';
 import styled from 'styled-components';
 
 import SkillItem from '../components/SkillItem';
-
-import {langs, libs, other, hlangs} from '../data/skills';
-
 import {showFromBottomPreset} from '../animations/presets';
 
+import {langs, libs, other, hlangs} from '../data/skills';
 import Language from '../contexts/language';
 
 const Container = styled.section`
@@ -66,40 +64,28 @@ const ItemsContainer = styled.div`
 const Item = styled(SkillItem)`
   height: 100px;
   width: 80px;
+  margin: 0.4em;
+  font-size: 11px;
+  font-family: Helvetica, Arial, sans-serif;
 
-  .title {
-    font-size: 11px;
-  }
-
-  .image {
-    height: 42px;
-    width: 42px;
+  .description {
+    color: rgb(117, 117, 117);
   }
 
   @media (min-width: 600px) {
-    height: 120px;
-    width: 100px;
+    height: 130px;
+    width: 110px;
 
-    .title {
-      font-size: 15px;
-    }
-
-    .image {
-      height: 50px;
-      width: 50px;
-    }
+    font-size: 15px;
   }
 
   @media (min-width: 1000px) {
     height: 140px;
     width: 120px;
-
-    .image {
-      height: 55px; /*55*/
-      width: 55px;
-    }
   }
 `
+
+
 
 interface CategoryProps {
   datasrc: typeof langs;
@@ -115,7 +101,7 @@ function Category({datasrc, children}: CategoryProps) {
       <CategoryContainer animated={animated}>
         <CategoryTitle>{children}</CategoryTitle>
         <ItemsContainer>
-          {datasrc.map(i => <Item key={i.name} icon={i.image} title={i.name} text={i.desc}/>)}
+          {datasrc.map(i => <Item key={i.name} image={i.image} name={i.name} desc={i.desc}/>)}
         </ItemsContainer>
       </CategoryContainer>
     </VSensor>

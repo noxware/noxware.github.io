@@ -61,3 +61,30 @@ export function importAll(r: __WebpackModuleApi.RequireContext) {
 }
 
 //console.table(importAll(require.context('../data/', false)));
+
+if (!window.requestAnimationFrame) {
+  window.requestAnimationFrame = window.setTimeout;
+  window.cancelAnimationFrame = window.clearTimeout;
+}
+
+export function requestTimeout(fn: ()=>void, delay: number): void {
+  const start = (new Date()).getTime();
+  let id: number | undefined;
+
+  const checker = () => {
+    const delta = (new Date()).getTime() - start;
+
+    if (delta >= delay) {
+      fn();
+      id = undefined;
+      return;
+    }
+
+    id = requestAnimationFrame(checker);
+  }
+
+  id = requestAnimationFrame(checker);
+
+  // @ts-ignore
+  return () => (id !== undefined) && window.cancelAnimationFrame(id);
+}

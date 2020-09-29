@@ -5,7 +5,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
   padding: 1em;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(219, 219, 219);
@@ -16,45 +15,26 @@ const Container = styled.div`
 
   /* Font family */
 
-  padding: 1.2em;
-  
+  margin: 0.4em;
+  font-family: Helvetica, Arial, sans-serif;
 `
 
 const Image = styled.img`
-  height: 0;
-  width: 100%;
+  height: 1px;
   flex-grow: 1;
-  object-fit: scale-down;
 
-  /*height: 55px;
-  width: 55px;
-  flex-grow: 0;*/
-  margin-bottom: auto;
+  object-fit: scale-down;
 `
 
 const Name = styled.span`
   font-size: 1em;
   text-align: center;
-  /*margin-top: 1.5em;*/
-  line-height: 1em;
-  /*height: 1em;*/
-  
-`
-
-const NameWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-  height: 2em;
-  overflow: visible;
-  margin-top: 1em;
+  margin-top: 1.5em;
 `
 
 const Description = styled.span`
   font-size: 0.8em;
-  margin-top: 0.2em;
+  margin-top: 0.5em;
   text-align: center;
 `
 
@@ -69,10 +49,8 @@ export default function (props: Props) {
   return (
     <Container className={`skill-item container ${props.className}`}>
       <Image className='image' src={props.image} alt={`${props.name} image.`} />
-      <NameWrapper className='name-wrapper'>
-        <Name className='name'>{props.name}</Name>
-      </NameWrapper>
-      {props.desc && <Description className='description'>{props.desc}</Description>}
+      <Name className='name'>{props.name}</Name>
+      {props.desc && <Description>{props.desc}</Description>}
     </Container>
   );
 }

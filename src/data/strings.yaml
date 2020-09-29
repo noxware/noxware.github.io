@@ -40,11 +40,12 @@ en:
   links:
     title: Links and contact
     switch: Switch language
+    thisPage: This page's source code
     
 es:
   intro:
     title: Franco Profeti
-    subtitle: Desarrollador de Uruguay apasionado por las tecnologias libres.
+    subtitle: Desarrollador de Uruguay apasionado por las tecnologias libres
 
   about:
     title: Sobre mi
@@ -82,4 +83,5 @@ es:
   links:
     title: Enlaces y contacto
     switch: Cambiar de idioma
+    thisPage: Codigo fuente de esta pagina
 
