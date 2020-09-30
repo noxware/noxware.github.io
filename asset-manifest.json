@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.8af147de.chunk.js",
-    "main.js.map": "/static/js/main.8af147de.chunk.js.map",
+    "main.js": "/static/js/main.4406b247.chunk.js",
+    "main.js.map": "/static/js/main.4406b247.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.50ed05b9.js",
     "runtime-main.js.map": "/static/js/runtime-main.50ed05b9.js.map",
     "static/js/2.7b73f0e0.chunk.js": "/static/js/2.7b73f0e0.chunk.js",
     "static/js/2.7b73f0e0.chunk.js.map": "/static/js/2.7b73f0e0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c5990d02127dd78bc87baa3de5d4f24f.js": "/precache-manifest.c5990d02127dd78bc87baa3de5d4f24f.js",
+    "precache-manifest.b58b221e1aa5090482ac95f5fd7acd61.js": "/precache-manifest.b58b221e1aa5090482ac95f5fd7acd61.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.7b73f0e0.chunk.js.LICENSE.txt": "/static/js/2.7b73f0e0.chunk.js.LICENSE.txt",
     "static/media/Arduino.svg": "/static/media/Arduino.6fa02da1.svg",
-    "static/media/Bash.svg": "/static/media/Bash.7817f073.svg",
     "static/media/C#.svg": "/static/media/C#.ae7ae193.svg",
     "static/media/C++.svg": "/static/media/C++.7d25f694.svg",
     "static/media/C.svg": "/static/media/C.00cc5bdb.svg",
     "static/media/CSS.svg": "/static/media/CSS.a7f23eda.svg",
+    "static/media/Express.svg": "/static/media/Express.9de32921.svg",
+    "static/media/FLTK.svg": "/static/media/FLTK.7c59073d.svg",
     "static/media/GTK.svg": "/static/media/GTK.23e2f1c3.svg",
     "static/media/Gimp.svg": "/static/media/Gimp.5d026677.svg",
     "static/media/Git.svg": "/static/media/Git.4bea42ef.svg",
@@ -24,11 +25,14 @@
     "static/media/Javascript.svg": "/static/media/Javascript.abfb143c.svg",
     "static/media/Linux.svg": "/static/media/Linux.3a47028f.svg",
     "static/media/Lua.svg": "/static/media/Lua.b0b2bdd4.svg",
+    "static/media/MongoDB.svg": "/static/media/MongoDB.a8400538.svg",
     "static/media/MySQL.svg": "/static/media/MySQL.dce61c45.svg",
     "static/media/Node.js.svg": "/static/media/Node.js.69a09ead.svg",
     "static/media/PostgreSQL.svg": "/static/media/PostgreSQL.d7c985e7.svg",
+    "static/media/Proton Native.svg": "/static/media/Proton Native.f8ff1334.svg",
     "static/media/Puppeteer.svg": "/static/media/Puppeteer.47b2ae00.svg",
     "static/media/Python.svg": "/static/media/Python.6eeb4fa2.svg",
+    "static/media/QML.png": "/static/media/QML.b72e1586.png",
     "static/media/Qt.svg": "/static/media/Qt.b7eeb96f.svg",
     "static/media/Raspberry Pi.svg": "/static/media/Raspberry Pi.571d43e8.svg",
     "static/media/React Native.svg": "/static/media/React Native.2bc32987.svg",
@@ -36,16 +40,19 @@
     "static/media/SQL.svg": "/static/media/SQL.7ef81265.svg",
     "static/media/Sass.svg": "/static/media/Sass.8e766e95.svg",
     "static/media/Selenium.svg": "/static/media/Selenium.de37387d.svg",
+    "static/media/Shell Script.svg": "/static/media/Shell Script.7817f073.svg",
     "static/media/Styled Components.png": "/static/media/Styled Components.05b9e1f9.png",
+    "static/media/Tkinter.svg": "/static/media/Tkinter.9dc5f54b.svg",
     "static/media/Typescript.svg": "/static/media/Typescript.f6f43066.svg",
     "static/media/XML.svg": "/static/media/XML.94127870.svg",
     "static/media/en.svg": "/static/media/en.67b26caa.svg",
     "static/media/es.svg": "/static/media/es.3e1113f9.svg",
-    "static/media/me.jpg": "/static/media/me.32cea650.jpg"
+    "static/media/me.jpg": "/static/media/me.32cea650.jpg",
+    "static/media/x86 Assembly.svg": "/static/media/x86 Assembly.9da2c5a9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.50ed05b9.js",
     "static/js/2.7b73f0e0.chunk.js",
-    "static/js/main.8af147de.chunk.js"
+    "static/js/main.4406b247.chunk.js"
   ]
 }

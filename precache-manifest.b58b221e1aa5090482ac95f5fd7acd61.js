@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "783ba9c0f83d6dc368153c4117d5b94b",
+    "revision": "aaa5eebee922f739a1d0af2a99a4cf48",
     "url": "/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.7b73f0e0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6f06d3e88426f11cf6e9",
-    "url": "/static/js/main.8af147de.chunk.js"
+    "revision": "6dbd90f75ab9562fbd66",
+    "url": "/static/js/main.4406b247.chunk.js"
   },
   {
     "revision": "bd852e7eb139d6cc279b",
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6fa02da16641a348ae62c4f71628e0ad",
     "url": "/static/media/Arduino.6fa02da1.svg"
-  },
-  {
-    "revision": "7817f073d8177e40a6725c916c71d964",
-    "url": "/static/media/Bash.7817f073.svg"
   },
   {
     "revision": "ae7ae1933d2d0fd689999a95347a9a98",
@@ -42,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a7f23eda0002cbaf3ef20a7fbb8f36a2",
     "url": "/static/media/CSS.a7f23eda.svg"
+  },
+  {
+    "revision": "9de32921fe1e3899c721d066d10da3ef",
+    "url": "/static/media/Express.9de32921.svg"
+  },
+  {
+    "revision": "7c59073db400c5902a54aff2709b086c",
+    "url": "/static/media/FLTK.7c59073d.svg"
   },
   {
     "revision": "23e2f1c388aa5c741ad06cee1f24b909",
@@ -76,6 +80,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Lua.b0b2bdd4.svg"
   },
   {
+    "revision": "a84005384c05ba588aef954bd4546ea0",
+    "url": "/static/media/MongoDB.a8400538.svg"
+  },
+  {
     "revision": "dce61c4503627bbc1bee2e0b23b8dd4c",
     "url": "/static/media/MySQL.dce61c45.svg"
   },
@@ -88,12 +96,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/PostgreSQL.d7c985e7.svg"
   },
   {
+    "revision": "f8ff1334930bb39ca52e1f13aeaf716c",
+    "url": "/static/media/Proton Native.f8ff1334.svg"
+  },
+  {
     "revision": "47b2ae005a0fdac99929b42420edaf90",
     "url": "/static/media/Puppeteer.47b2ae00.svg"
   },
   {
     "revision": "6eeb4fa2355bf98ab7abbe2209603ada",
     "url": "/static/media/Python.6eeb4fa2.svg"
+  },
+  {
+    "revision": "b72e15866debe95ddebddd674dce0747",
+    "url": "/static/media/QML.b72e1586.png"
   },
   {
     "revision": "b7eeb96f428ffd554c16490d4ce4b005",
@@ -124,8 +140,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Selenium.de37387d.svg"
   },
   {
+    "revision": "7817f073d8177e40a6725c916c71d964",
+    "url": "/static/media/Shell Script.7817f073.svg"
+  },
+  {
     "revision": "05b9e1f90fc8947209b50a7c458b85a8",
     "url": "/static/media/Styled Components.05b9e1f9.png"
+  },
+  {
+    "revision": "9dc5f54b3903e0df67ace2fc97f9a096",
+    "url": "/static/media/Tkinter.9dc5f54b.svg"
   },
   {
     "revision": "f6f430666842303f085acabee722fe40",
@@ -146,5 +170,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "32cea650192bdb639fc9a847f0d7b10f",
     "url": "/static/media/me.32cea650.jpg"
+  },
+  {
+    "revision": "9da2c5a90224267df26634ea4908779c",
+    "url": "/static/media/x86 Assembly.9da2c5a9.svg"
   }
 ]);
