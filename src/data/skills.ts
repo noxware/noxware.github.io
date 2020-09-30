@@ -37,10 +37,14 @@ function skillTextFromKey(key: string) {
 
 /**
  * Escapes an Url (/ are not escaped but : are)
+ * (Max lenght of the url 500 chars)
  * 
  * @param url - Relative url without specifying protocol or host.
  */
 function encodeRef(url: string) {
+  if (url.length > 500)
+    return url;
+
   return encodeURIComponent(url.replace(/\//g, '_slash_')).replace(/_slash_/g, '/');
 }
 

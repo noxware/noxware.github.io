@@ -11,6 +11,8 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
+  /*background-image: linear-gradient(-45deg, #ee7752, #e73c7e);*/
+  /*background-color: #2b333b;*/
   color: #ffffff;
   /*height: 90vh;*/
   width: 100%;

@@ -3,8 +3,6 @@ import styled from 'styled-components';
 
 import Language from '../contexts/language';
 
-import {langs} from '../data/skills';
-
 const Container = styled.section`
   display: flex;
   flex-direction: row;
@@ -100,7 +98,7 @@ function ItemWithLink(props: any) {
 
 export default function () {
   const s = useContext(Language);
-https://github.com/Noxware/noxware.github.io
+
   return (
     <Container>
       <Title>{s.links.title}</Title>

@@ -22,7 +22,7 @@ const Container = styled.section`
 
 const Title = styled.h1`
   font-size: 1.7em;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   @media (min-width: 600px) {
     font-size: 2.2em;
@@ -34,7 +34,14 @@ const CategoryTitle = styled.h2`
   width: 100%;
   text-align: center;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+
+
+  @media (min-width: 730px) {
+    font-size: 1.3em;
+  }
 `
 
 interface CategoryContainerProps {

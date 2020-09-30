@@ -10,7 +10,8 @@ const Container = styled.button`
   margin: 0.4em;
   border-radius: 10%;
   border: none;
-  background-color: #333333;
+  /*background-color: #333333;*/
+  background-color: rgb(33,41,49);
   font-family: Helvetica, Arial, sans-serif;
   color: inherit;
 

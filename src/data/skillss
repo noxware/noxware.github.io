@@ -7,7 +7,7 @@ C++*
 HTML*
 JS*
 CSS*
-Asm
+Asm*
 Java*
 C#*
 MySql*
@@ -16,18 +16,18 @@ Linux*
 Arduino*
 Gtk*
 PyGame**
-Tkinter
+Tkinter*
 Gimp*
-Batch
+Batch*
 Bash**
-Beautifulsoup
+Beautifulsoup*
 
 # Luego
 Node*
-Express
+Express*
 React* y native*
 Socket.io*
-proton native
+proton native*
 VSCode?*
 Lua*
 Pi*
@@ -36,12 +36,12 @@ Selenium*
 Puppter*
 Typescript*
 Qt*
-Qml
-Fltk
+Qml*
+Fltk*
 XML*
 SQL*
 Electron*
-MongoDB
+MongoDB*
 Sass*
 styled-components?*
 

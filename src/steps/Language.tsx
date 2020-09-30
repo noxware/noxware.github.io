@@ -14,7 +14,8 @@ const Container = styled.section`
   flex-wrap: wrap;
   width: 100%;
   height: 100vh;
-  background-color: #111111;
+  /*background-color: #111111;*/
+  background-color: rgb(43,51,59);
   color: #ffffff;
   padding: 1rem;
 `
