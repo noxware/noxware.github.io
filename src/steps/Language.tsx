@@ -5,6 +5,9 @@ import LanguageContext from '../contexts/language';
 
 import LangButton from '../components/LangButton';
 
+import en from '../assets/lang-select/en.svg';
+import es from '../assets/lang-select/es.svg';
+
 const Container = styled.section`
   display: flex;
   flex-direction: row;
@@ -46,7 +49,7 @@ export default function () {
       <FlexBreak />
       <LangButton
         name='English'
-        icon={'https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png'}
+        icon={en}
         onClick={
           () => {
             window.localStorage.setItem('lang', 'en');
@@ -55,7 +58,7 @@ export default function () {
         } />
       <LangButton
         name='Español'
-        icon={'https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/1280px-Flag_of_Spain.svg.png'}
+        icon={es}
         onClick={
           () => {
             window.localStorage.setItem('lang', 'es');
