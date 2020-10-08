@@ -1,15 +1,18 @@
+
+// External libraries
 import React, { useState } from 'react';
 import styled, {createGlobalStyle} from 'styled-components';
 
+// Steps
 import Intro from './steps/Intro';
 import About from './steps/About';
 import Skills from './steps/Skills';
 import Links from './steps/Links';
 import Language from './steps/Language';
 
+// Other
 import LanguageContext from './contexts/language';
 import strings from './data/strings.yaml';
-
 
 const ResetStyles = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -58,7 +61,9 @@ const ResetStyles = createGlobalStyle`
     border-spacing: 0;
   }
 `
-
+/**
+ * Custom base styles.
+ */
 const BaseStyles = createGlobalStyle`
   * {
     box-sizing: border-box;
@@ -78,6 +83,10 @@ const BaseStyles = createGlobalStyle`
   h1, h2, h3, h4, h5, h6 {
     font-family: Helvetica, Arial, sans-serif
   }
+
+  button, a {
+    cursor: pointer;
+  }
 `
 
 const Main = styled.main`
@@ -87,8 +96,11 @@ const Main = styled.main`
 `
 
 
-
+/**
+ * Main web app component.
+ */
 function App() {
+  // Lang can be 'es', 'en' or ''. If the string is empty, the language selection screen will be displayed.
   const [lang, setLang] = useState(window.localStorage.getItem('lang') || '');
 
   const currentLang = strings[lang] || {};

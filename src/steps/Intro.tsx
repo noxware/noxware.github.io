@@ -1,6 +1,8 @@
+// External libraries.
 import React, { useEffect, useState, useContext } from 'react';
 import styled from 'styled-components';
 
+// Other
 import AnimatedFCE from '../components/AnimatedFCE';
 import CODES from '../data/code-animation.yaml';
 import Language from '../contexts/language';
@@ -107,9 +109,9 @@ export default function () {
   }, []);
 
   return (
-    <Container className='intro'>
-      <Title className='title'>{s.intro.title}</Title>
-      <Subtitle className='subtitle'>{s.intro.subtitle}</Subtitle>
+    <Container>
+      <Title>{s.intro.title}</Title>
+      <Subtitle>{s.intro.subtitle}</Subtitle>
       <DemoCode code={code} cursor='%i%' speed={20} />
     </Container>
   );
