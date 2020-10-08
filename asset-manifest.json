@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.4406b247.chunk.js",
-    "main.js.map": "/static/js/main.4406b247.chunk.js.map",
+    "main.js": "/static/js/main.4d8bf241.chunk.js",
+    "main.js.map": "/static/js/main.4d8bf241.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.50ed05b9.js",
     "runtime-main.js.map": "/static/js/runtime-main.50ed05b9.js.map",
-    "static/js/2.7b73f0e0.chunk.js": "/static/js/2.7b73f0e0.chunk.js",
-    "static/js/2.7b73f0e0.chunk.js.map": "/static/js/2.7b73f0e0.chunk.js.map",
+    "static/js/2.adbcd22d.chunk.js": "/static/js/2.adbcd22d.chunk.js",
+    "static/js/2.adbcd22d.chunk.js.map": "/static/js/2.adbcd22d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b58b221e1aa5090482ac95f5fd7acd61.js": "/precache-manifest.b58b221e1aa5090482ac95f5fd7acd61.js",
+    "precache-manifest.3748fb3fe1e48638e169bc6251ce0cc1.js": "/precache-manifest.3748fb3fe1e48638e169bc6251ce0cc1.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.7b73f0e0.chunk.js.LICENSE.txt": "/static/js/2.7b73f0e0.chunk.js.LICENSE.txt",
+    "static/js/2.adbcd22d.chunk.js.LICENSE.txt": "/static/js/2.adbcd22d.chunk.js.LICENSE.txt",
     "static/media/Arduino.svg": "/static/media/Arduino.6fa02da1.svg",
     "static/media/C#.svg": "/static/media/C#.ae7ae193.svg",
     "static/media/C++.svg": "/static/media/C++.7d25f694.svg",
@@ -45,14 +45,14 @@
     "static/media/Tkinter.svg": "/static/media/Tkinter.9dc5f54b.svg",
     "static/media/Typescript.svg": "/static/media/Typescript.f6f43066.svg",
     "static/media/XML.svg": "/static/media/XML.94127870.svg",
-    "static/media/en.svg": "/static/media/en.67b26caa.svg",
-    "static/media/es.svg": "/static/media/es.3e1113f9.svg",
+    "static/media/en.svg": "/static/media/en.a035edad.svg",
+    "static/media/es.svg": "/static/media/es.6b7f4fbd.svg",
     "static/media/me.jpg": "/static/media/me.32cea650.jpg",
     "static/media/x86 Assembly.svg": "/static/media/x86 Assembly.9da2c5a9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.50ed05b9.js",
-    "static/js/2.7b73f0e0.chunk.js",
-    "static/js/main.4406b247.chunk.js"
+    "static/js/2.adbcd22d.chunk.js",
+    "static/js/main.4d8bf241.chunk.js"
   ]
 }
