@@ -10,8 +10,9 @@ const Container = styled.section`
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem;
-  font-family: Helvetica, Arial, sans-serif;
-  background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
+  /*background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);*/
+  background-color: rgb(28, 28, 28);
+  background-image: linear-gradient(315deg, rgb(28, 28, 28) 0%, rgb(35, 35, 35) 74%);
   color: #ffffff;
 `
 

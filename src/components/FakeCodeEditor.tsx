@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  font-family: monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 1.1em;
   background-color: black;
   border-radius: 10px;

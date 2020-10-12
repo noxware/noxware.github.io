@@ -73,7 +73,7 @@ const Item = styled(SkillItem)`
   width: 80px;
   margin: 0.4em;
   font-size: 11px;
-  font-family: Helvetica, Arial, sans-serif;
+  /*font-family: Helvetica, Arial, sans-serif;*/
 
   .description {
     color: rgb(117, 117, 117);

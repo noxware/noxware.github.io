@@ -71,20 +71,16 @@ const BaseStyles = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Georgia, serif, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: rgb(247, 250, 252);
     line-height: 1;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica, Arial, sans-serif
-  }
 
   button, a {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
     cursor: pointer;
   }
 `

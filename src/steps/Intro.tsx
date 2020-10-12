@@ -15,6 +15,13 @@ const Container = styled.section`
   background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
   /*background-image: linear-gradient(-45deg, #ee7752, #e73c7e);*/
   /*background-color: #2b333b;*/
+  background-color: rgb(28, 28, 28);
+  background-image: linear-gradient(315deg, rgb(28, 28, 28) 0%, rgb(35, 35, 35) 74%);
+  
+
+
+/*background-color: #ffa69e;
+background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%);*/
   color: #ffffff;
   /*height: 90vh;*/
   width: 100%;
@@ -32,6 +39,7 @@ const Container = styled.section`
 const Title = styled.h1`
   font-size: 2.2em;  
   margin-bottom: 1rem;
+  font-family: 'Raleway';
 
   @media (min-width: 500px) {
     font-size: 2.8em;
@@ -54,6 +62,7 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
   text-align: center;
   color: #c4ced7;
+  font-family: 'Raleway';
 
   font-size: 1em;
   margin-bottom: 1rem;
@@ -63,7 +72,7 @@ const Subtitle = styled.h2`
   }
 
   @media (min-width: 600px) {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   @media (min-width: 1000px) {
@@ -79,7 +88,8 @@ const Subtitle = styled.h2`
 const DemoCode = styled(AnimatedFCE)`
   width: 100%;
   .code {
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.4;
   }
 
   @media (min-width: 600px) {
@@ -88,14 +98,14 @@ const DemoCode = styled(AnimatedFCE)`
 
   @media (min-width: 730px) {
     .code {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 `
 
 export default function () {
   const s = useContext(Language);
-  const getCode: () => string = () => window.innerWidth < 600 ? CODES.smallCode : CODES.bigCode;
+  const getCode: () => string = () => window.innerWidth < 620 ? CODES.smallCode : CODES.bigCode;
 
   const [code, setCode] = useState(getCode());
 
