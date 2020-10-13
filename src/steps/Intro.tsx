@@ -45,9 +45,7 @@ const Title = styled.h1`
     font-size: 2.8em;
   }
 
-  @media (min-width: 600px) {
-    margin-bottom: 2rem;
-  }
+
 
   @media (min-width: 730px) {
     font-size: 3.2em;
@@ -55,7 +53,7 @@ const Title = styled.h1`
 
   @media (min-width: 1280px) {
     font-size: 4em;
-    margin-bottom: 3rem;
+
   }
 `
 
@@ -73,6 +71,7 @@ const Subtitle = styled.h2`
 
   @media (min-width: 600px) {
     margin-bottom: 3rem;
+    font-size: 1.5em;
   }
 
   @media (min-width: 1000px) {

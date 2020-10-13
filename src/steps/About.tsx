@@ -26,7 +26,7 @@ const Container = styled.section`
 
 const Title = styled.h1`
   font-size: 1.7em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 
   @media (min-width: 600px) {
     font-size: 2.2em;
