@@ -1,1 +1,1 @@
-Work in progress.
+A little website about myself that I'm going to use while looking for a job.

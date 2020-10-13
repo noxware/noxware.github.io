@@ -30,4 +30,4 @@ smallCode: |-
    
   %v%main%x%();
    
-  %c%/* Output: This Javascript animation is different and better in a device with higher resolution, like a desktop computer. */
+  %c%/* Output: This Javascript animation is different in a device with higher resolution, like a desktop computer. */

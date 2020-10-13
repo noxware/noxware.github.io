@@ -57,7 +57,9 @@ function skillDataFromContext(ctx: __WebpackModuleApi.RequireContext) {
 }
 
 export const langs = skillDataFromContext(require.context('../assets/langs', false));
+export const olangs = skillDataFromContext(require.context('../assets/olangs', false));
 export const libs = skillDataFromContext(require.context('../assets/libs', false));
+export const dbs = skillDataFromContext(require.context('../assets/dbs', false));
 export const other = skillDataFromContext(require.context('../assets/other', false));
 
 interface TextSrc {

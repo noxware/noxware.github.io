@@ -21,9 +21,13 @@ en:
   skills:
     title: Skills
     langs:
-      title: Programming and markup languages
+      title: Programming languages
+    olangs:
+      title: Other types of computer languages
     libs:
-      title: Libraries and frameworks
+      title: Libraries and frameworks of interest
+    dbs:
+      title: Databases
     other:
       title: Others
     hlangs:
@@ -34,7 +38,7 @@ en:
           desc: Native
         - id: en
           name: English
-          desc: Excellent
+          desc: Intermediate
   
   links:
     title: Links and contact
@@ -64,9 +68,13 @@ es:
   skills:
     title: Habilidades
     langs:
-      title: Lenguajes de programacion y marcado
+      title: Lenguajes de programación
+    olangs:
+      title: Otros tipos de lenguajes informáticos
     libs:
-      title: Librerias y frameworks
+      title: Librerías y frameworks de interés
+    dbs:
+      title: Bases de datos
     other:
       title: Otros
     hlangs:
@@ -77,7 +85,7 @@ es:
           desc: Nativo
         - id: en
           name: Ingles
-          desc: Excelente
+          desc: Intermedio
   
   links:
     title: Enlaces y contacto

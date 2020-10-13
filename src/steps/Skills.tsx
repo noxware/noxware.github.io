@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import SkillItem from '../components/SkillItem';
 import {showFromBottomPreset} from '../animations/presets';
 
-import {langs, libs, other, hlangs} from '../data/skills';
+import {langs, libs, other, hlangs, olangs, dbs} from '../data/skills';
 import Language from '../contexts/language';
 
 const Container = styled.section`
@@ -48,7 +48,7 @@ interface CategoryContainerProps {
 }
 
 const CategoryContainer = styled.section<CategoryContainerProps>`
-  max-width: 1000px;
+  max-width: 850px; /* 1000 */
 
   opacity: 0%;
   ${props => props.animated && showFromBottomPreset}
@@ -122,7 +122,9 @@ export default function () {
       <Title className='title'>{s.skills.title}</Title>
 
       <Category datasrc={langs}>{s.skills.langs.title}</Category>
+      <Category datasrc={olangs}>{s.skills.olangs.title}</Category>
       <Category datasrc={libs}>{s.skills.libs.title}</Category>
+      <Category datasrc={dbs}>{s.skills.dbs.title}</Category>
       <Category datasrc={other}>{s.skills.other.title}</Category>
       <Category datasrc={hlangs[s.currentLangKey]}>{s.skills.hlangs.title}</Category>
     </Container>

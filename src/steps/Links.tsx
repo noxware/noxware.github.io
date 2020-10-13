@@ -27,6 +27,11 @@ const Title = styled.h1`
 const Link = styled.a`
   text-decoration: none;
   color: #4CAF50;
+  padding: 2px;
+
+  &:hover {
+    color: rgb(126, 225, 130);
+  }
 `
 
 const LangSwitch = styled.button`
@@ -45,7 +50,7 @@ const LangSwitch = styled.button`
   }
 
   &:hover {
-    background-color: rgb(86, 185, 90);
+    background-color: rgb(96, 195, 100);
   }
 `
 
