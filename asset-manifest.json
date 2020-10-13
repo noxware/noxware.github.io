@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.a22e8608.chunk.js",
-    "main.js.map": "/static/js/main.a22e8608.chunk.js.map",
+    "main.js": "/static/js/main.66555fb5.chunk.js",
+    "main.js.map": "/static/js/main.66555fb5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.50ed05b9.js",
     "runtime-main.js.map": "/static/js/runtime-main.50ed05b9.js.map",
     "static/js/2.adbcd22d.chunk.js": "/static/js/2.adbcd22d.chunk.js",
     "static/js/2.adbcd22d.chunk.js.map": "/static/js/2.adbcd22d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b4d17100a2c245552bacecbb7f8eda34.js": "/precache-manifest.b4d17100a2c245552bacecbb7f8eda34.js",
+    "precache-manifest.e01deeac3eb3b5c75c56d1138abbef47.js": "/precache-manifest.e01deeac3eb3b5c75c56d1138abbef47.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.adbcd22d.chunk.js.LICENSE.txt": "/static/js/2.adbcd22d.chunk.js.LICENSE.txt",
     "static/media/Arduino.svg": "/static/media/Arduino.6fa02da1.svg",
@@ -21,6 +21,7 @@
     "static/media/Gimp.svg": "/static/media/Gimp.5d026677.svg",
     "static/media/Git.svg": "/static/media/Git.4bea42ef.svg",
     "static/media/HTML.svg": "/static/media/HTML.1f4630ca.svg",
+    "static/media/JSON.svg": "/static/media/JSON.732130f9.svg",
     "static/media/Java.svg": "/static/media/Java.84321945.svg",
     "static/media/Javascript.svg": "/static/media/Javascript.abfb143c.svg",
     "static/media/Linux.svg": "/static/media/Linux.3a47028f.svg",
@@ -29,7 +30,6 @@
     "static/media/MySQL.svg": "/static/media/MySQL.dce61c45.svg",
     "static/media/Node.js.svg": "/static/media/Node.js.69a09ead.svg",
     "static/media/PostgreSQL.svg": "/static/media/PostgreSQL.d7c985e7.svg",
-    "static/media/Proton Native.svg": "/static/media/Proton Native.f8ff1334.svg",
     "static/media/Puppeteer.svg": "/static/media/Puppeteer.47b2ae00.svg",
     "static/media/Python.svg": "/static/media/Python.6eeb4fa2.svg",
     "static/media/QML.png": "/static/media/QML.b72e1586.png",
@@ -45,6 +45,7 @@
     "static/media/Tkinter.svg": "/static/media/Tkinter.9dc5f54b.svg",
     "static/media/Typescript.svg": "/static/media/Typescript.f6f43066.svg",
     "static/media/XML.svg": "/static/media/XML.94127870.svg",
+    "static/media/YAML.svg": "/static/media/YAML.41d255ab.svg",
     "static/media/en.svg": "/static/media/en.a035edad.svg",
     "static/media/es.svg": "/static/media/es.6b7f4fbd.svg",
     "static/media/me.jpg": "/static/media/me.32cea650.jpg",
@@ -53,6 +54,6 @@
   "entrypoints": [
     "static/js/runtime-main.50ed05b9.js",
     "static/js/2.adbcd22d.chunk.js",
-    "static/js/main.a22e8608.chunk.js"
+    "static/js/main.66555fb5.chunk.js"
   ]
 }

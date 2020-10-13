@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ca2e67d368b97d808faab31b1253714",
+    "revision": "369e11c4fba804e42ec496fc3c16ce51",
     "url": "/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.adbcd22d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "31b2116698bc8991d9e0",
-    "url": "/static/js/main.a22e8608.chunk.js"
+    "revision": "8cc18966a2662ad2c451",
+    "url": "/static/js/main.66555fb5.chunk.js"
   },
   {
     "revision": "bd852e7eb139d6cc279b",
@@ -64,6 +64,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/HTML.1f4630ca.svg"
   },
   {
+    "revision": "732130f90cda64571cf9064f57ecc37c",
+    "url": "/static/media/JSON.732130f9.svg"
+  },
+  {
     "revision": "84321945474161660fa7d892460c2d6c",
     "url": "/static/media/Java.84321945.svg"
   },
@@ -94,10 +98,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d7c985e7cca077dc2d77f89a66573e35",
     "url": "/static/media/PostgreSQL.d7c985e7.svg"
-  },
-  {
-    "revision": "f8ff1334930bb39ca52e1f13aeaf716c",
-    "url": "/static/media/Proton Native.f8ff1334.svg"
   },
   {
     "revision": "47b2ae005a0fdac99929b42420edaf90",
@@ -158,6 +158,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9412787092e829f574f73ba0d67848c0",
     "url": "/static/media/XML.94127870.svg"
+  },
+  {
+    "revision": "41d255ab1eb5961ac44dfc5dcaed1ffd",
+    "url": "/static/media/YAML.41d255ab.svg"
   },
   {
     "revision": "67b26caad5d114909fd0299cf76485af",
