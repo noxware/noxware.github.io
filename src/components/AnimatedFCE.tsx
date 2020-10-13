@@ -60,6 +60,7 @@ export default function (props: Props) {
 
   useEffect(() => {
     let textIter = createTextIterator(props.code);
+    let i: number;
 
     const animationHandler = () => {
       const nextCode = textIter.next();
@@ -67,10 +68,12 @@ export default function (props: Props) {
       if (!nextCode.done) {
         i = window.setTimeout(animationHandler, props.speed);
         setCurrentCode(nextCode.value + props.cursor);
-      }
+      } /*else if (props.cursor) {
+        setCurrentCode(c => c.slice(0, -props.cursor.length));
+      }*/
     }
 
-    let i = window.setTimeout(animationHandler, props.speed);
+    i = window.setTimeout(animationHandler, props.speed);
 
     return () => clearTimeout(i);
   }, [props.code, props.speed, props.cursor]);
