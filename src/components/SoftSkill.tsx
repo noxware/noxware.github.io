@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import VisibileAnimation from '../components/VisibileAnimation';
 
-import VAnimation from '../components/VisibileAnimation';
 import {showFromBottomPreset} from '../animations/presets';
 
 interface StyledProps {
@@ -15,6 +14,10 @@ const Container = styled(VisibileAnimation)<StyledProps>`
   width: 100%;
   justify-content: ${props => props.right ? 'flex-end' : 'flex-start'};;
   align-self: ${props => props.right ? 'flex-end' : 'flex-start'};
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 const TextContainer = styled.div<StyledProps>`

@@ -1,10 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import styled, { FlattenSimpleInterpolation } from 'styled-components';
-import VSensor from 'react-visibility-sensor';
 
 import Language from '../contexts/language';
 import SoftSkill from '../components/SoftSkill';
-import Text from '../components/Text';
 
 import empathyImg from '../assets/soft/empathy.svg';
 import determinationImg from '../assets/soft/determination.svg';
