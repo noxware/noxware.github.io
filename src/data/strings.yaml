@@ -22,22 +22,21 @@ en:
     title: Soft skills
     items:
       honesty: 
-        name: Honesto
+        name: Honest
         desc: >-
-              No me agradan las mentiras y si miento posiblemente me sienta mal luego :(
+              I don't like lies and if I lie I might feel bad later :(
       determination:                
-        name: Determinado
+        name: Determined
         desc: >-
-              No me rindo facilmente una vez que me decidi a lograr algo ;)
+              I don't give up easily once I decide to achieve something ;)
       empathy:
-        name: Empatico
+        name: Empathic
         desc: >-
-              Siempre intento comprender los sentimientos de los demas. Las emociones de quienes me rodean
-              me afectan de varias maneras.
+              I always try to understand people's feelings. The emotions of those around me affect me in various ways.
       teamwork:
         name: Trabajo en equipo
         desc: >-
-              Dos cabezas piensan mejor que una. Siempre es bueno tener compañeros en quienes confiar :)
+              It is always good to have companions you can trust :)
 
   skills:
     title: Skills
