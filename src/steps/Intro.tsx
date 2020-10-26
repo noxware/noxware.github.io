@@ -10,6 +10,15 @@ import Language from '../contexts/language';
 const Container = styled.section`
   display: flex;
   flex-direction: column;
+
+  width: 100%;
+  min-height: 100vh;
+`
+
+const SubContainer = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);
@@ -17,6 +26,8 @@ const Container = styled.section`
   /*background-color: #2b333b;*/
   background-color: rgb(28, 28, 28);
   background-image: linear-gradient(315deg, rgb(28, 28, 28) 0%, rgb(35, 35, 35) 74%);
+  background-image: none;
+  background-color: #08f;
   
 
 
@@ -28,18 +39,19 @@ background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%);*/
 
   padding: 1rem;
   /*min-height: 85vh;*/
-  min-height: 100vh;
+  /*height: 100%;*/
 
   @media (min-width: 600px) {
     padding: 2rem;
     /*height: 100vh;*/
   }
-`
+`;
 
 const Title = styled.h1`
   font-size: 2.2em;  
   margin-bottom: 1rem;
   font-family: 'Raleway';
+  text-align: center;
 
   @media (min-width: 500px) {
     font-size: 2.8em;
@@ -59,7 +71,7 @@ const Title = styled.h1`
 
 const Subtitle = styled.h2`
   text-align: center;
-  color: #c4ced7;
+  color: rgb(230, 230, 230);
   font-family: 'Raleway';
 
   font-size: 1em;
@@ -118,10 +130,13 @@ export default function () {
   }, []);
 
   return (
-    <Container>
-      <Title>{s.intro.title}</Title>
-      <Subtitle>{s.intro.subtitle}</Subtitle>
-      <DemoCode code={code} cursor='%i%' speed={20} />
-    </Container>
+      <Container>
+        <SubContainer>
+          <Title>{s.intro.title}</Title>
+          <Subtitle>{s.intro.subtitle}</Subtitle>
+          <DemoCode code={code} cursor='%i%' speed={20} />
+        </SubContainer>
+        <div style={{height: '120px', overflow: 'hidden'}} ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{height: '100%', width: '100%'}}><path d="M0.00,49.98 C149.99,150.00 350.88,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style={{stroke: 'none', fill: '#08f'}}></path></svg></div>
+      </Container>
   );
 }

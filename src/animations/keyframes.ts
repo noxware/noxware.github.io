@@ -17,3 +17,4 @@ export const showFromLeft = showFromFactory(-50, 0);
 export const showFromRight = showFromFactory(50, 0);
 export const showFromTop = showFromFactory(0, -50);
 export const showFromBottom = showFromFactory(0, 50);
+export const show = showFromFactory(0, 0);

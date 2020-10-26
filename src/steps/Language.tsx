@@ -20,8 +20,8 @@ const Container = styled.section`
   
   height: 100vh;
   width: 100vw;
-
-  background-color: rgb(106, 205, 110);
+  background-color: #fad0c4;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 
   @media (min-width: 900px) {
     padding: 1rem;

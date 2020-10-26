@@ -15,3 +15,4 @@ export const showFromLeftPreset = showFromPresetFactory(kfs.showFromLeft, 2, 100
 export const showFromRightPreset = showFromPresetFactory(kfs.showFromRight, 2, 100);
 export const showFromTopPreset = showFromPresetFactory(kfs.showFromTop, 2, 100);
 export const showFromBottomPreset = showFromPresetFactory(kfs.showFromBottom, 2, 100);
+export const showPreset = showFromPresetFactory(kfs.show, 2, 100);

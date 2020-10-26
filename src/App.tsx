@@ -6,6 +6,7 @@ import styled, {createGlobalStyle} from 'styled-components';
 // Steps
 import Intro from './steps/Intro';
 import About from './steps/About';
+import SoftSkills from './steps/SoftSkills';
 import Skills from './steps/Skills';
 import Links from './steps/Links';
 import Language from './steps/Language';
@@ -74,7 +75,8 @@ const BaseStyles = createGlobalStyle`
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: rgb(247, 250, 252);
+    /*background-color: rgb(247, 250, 252);*/
+    background-color: rgb(255, 255, 255);
     line-height: 1;
   }
 
@@ -115,6 +117,7 @@ function App() {
               <>
                 <Intro />
                 <About />
+                <SoftSkills />
                 <Skills />
                 <Links />
               </>

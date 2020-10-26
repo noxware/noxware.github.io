@@ -11,8 +11,7 @@ const Container = styled.section`
   flex-wrap: wrap;
   padding: 2rem;
   /*background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);*/
-  background-color: rgb(28, 28, 28);
-  background-image: linear-gradient(315deg, rgb(28, 28, 28) 0%, rgb(35, 35, 35) 74%);
+  background-color: #08f;
   color: #ffffff;
 `
 
@@ -26,17 +25,13 @@ const Title = styled.h1`
 
 const Link = styled.a`
   text-decoration: none;
-  color: #4CAF50;
+  color: #fff;
   padding: 2px;
-
-  &:hover {
-    color: rgb(126, 225, 130);
-  }
 `
 
 const LangSwitch = styled.button`
-  background-color: rgb(76, 175, 80); /* Green */
-  border: none;
+  background-color: #08f; /* Green */
+  border: 1px solid white;
   color: white;
   padding: 1rem 2rem;
   text-align: center;
@@ -50,7 +45,7 @@ const LangSwitch = styled.button`
   }
 
   &:hover {
-    background-color: rgb(96, 195, 100);
+    background-color:  #2af;
   }
 `
 

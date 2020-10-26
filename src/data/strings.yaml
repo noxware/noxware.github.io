@@ -17,6 +17,27 @@ en:
       - >-
         I love programming and I'm always learning things as I need them for something.
         However, I still don't have work experience as a developer so I'm looking for my first job as such.
+  
+  soft:
+    title: Soft skills
+    items:
+      honesty: 
+        name: Honesto
+        desc: >-
+              No me agradan las mentiras y si miento posiblemente me sienta mal luego :(
+      determination:                
+        name: Determinado
+        desc: >-
+              No me rindo facilmente una vez que me decidi a lograr algo ;)
+      empathy:
+        name: Empatico
+        desc: >-
+              Siempre intento comprender los sentimientos de los demas. Las emociones de quienes me rodean
+              me afectan de varias maneras.
+      teamwork:
+        name: Trabajo en equipo
+        desc: >-
+              Dos cabezas piensan mejor que una. Siempre es bueno tener compañeros en quienes confiar :)
 
   skills:
     title: Skills
@@ -47,8 +68,8 @@ en:
     
 es:
   intro:
-    title: Franco Profeti
-    subtitle: Desarrollador de Uruguay apasionado por las tecnologías libres
+    title: Hola, soy Franco Profeti
+    subtitle: Un desarrollador de Uruguay apasionado por el software libre
 
   about:
     title: Sobre mi
@@ -65,6 +86,28 @@ es:
         Sin embargo, aun no cuento con experiencia laboral como desarrollador así que me encuentro en búsqueda
         de mi primer empleo como tal.
 
+  soft:
+    title: Soft skills
+    items:
+      honesty: 
+        name: Honesto
+        desc: >-
+              No me agradan las mentiras y si miento posiblemente me sienta mal luego :(
+      determination:                
+        name: Determinado
+        desc: >-
+              No me rindo facilmente una vez que me decidi a lograr algo ;)
+      empathy:
+        name: Empatico
+        desc: >-
+              Siempre intento comprender los sentimientos de los demas. Las emociones de quienes me rodean
+              me afectan de varias maneras.
+      teamwork:
+        name: Trabajo en equipo
+        desc: >-
+              Dos cabezas piensan mejor que una. Siempre es bueno tener compañeros en quienes confiar :)
+    
+    
   skills:
     title: Habilidades
     langs:
