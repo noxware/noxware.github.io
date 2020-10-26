@@ -1,7 +1,7 @@
 en:
   intro:
-    title: Franco Profeti
-    subtitle: Developer from Uruguay passionate about open source technologies
+    title: Hi, I'm Franco Profeti
+    subtitle: A developer from Uruguay passionate about open source technologies
 
   about:
     title: About me
@@ -34,7 +34,7 @@ en:
         desc: >-
               I always try to understand people's feelings. The emotions of those around me affect me in various ways.
       teamwork:
-        name: Trabajo en equipo
+        name: Teamwork
         desc: >-
               It is always good to have companions you can trust :)
 
