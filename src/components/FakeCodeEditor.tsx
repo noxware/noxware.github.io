@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   font-family: 'Fira Code', monospace;
-  /*font-size: 1.1em;*/
   background-color: #000000;
   border-radius: 10px;
   color: #ffffff;
   padding: 15px;
+  width: 100%;
+  max-width: 720px;
 
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14),
@@ -33,7 +34,12 @@ const TopBar = styled.div`
 */
 
 const Code = styled.div`
-  /*line-height: 1.2;*/
+  font-size: 12px;
+  line-height: 1.4;
+  
+  @media (min-width: 730px) {
+    font-size: 14px;
+  }
 
   pre { // ?
     white-space: pre-wrap; 

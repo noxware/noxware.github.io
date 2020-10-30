@@ -3,6 +3,9 @@ import FakeCodeEditor from './FakeCodeEditor';
 
 const RESIZE_TIMEOUT = 250;
 
+/**
+ * Iterates through every character of a string, jumping %className%-like sequences.
+ */
 function* createTextIterator(text: string) {
   let current = '';
   let className = false;
