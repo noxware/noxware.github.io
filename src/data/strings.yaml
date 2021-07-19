@@ -10,13 +10,16 @@ en:
         I'm a 22 years old developer from Uruguay who has been interested in programming since young.
         I had my first contact with the world of programming at the age of 12 and I began to learn how to
         program for real at the age of 15 thanks to the help of 2 friends who taught me about
-        open source software.
+        open source software. From there I was totally self-taught and I was learning a variety of topics
+        that interested me until I got to know everything I know today.
       - >-
-        From there, I started to learn all kinds of things that interested me, from web development to
-        assembly language and electronics.
+        My favorite programming languages at the time of writing this are Dart, TypeScript, Python and C,
+        and I am interested in learning other languages and technologies like Rust when I have the
+        motivation and time to do so. I like to keep up to date at least with theoretical knowledge about
+        new and interesting things.
       - >-
-        I love programming and I'm always learning things as I need them for something.
-        However, I still don't have work experience as a developer so I'm looking for my first job as such.
+        I would like to redesign this page when I have time and also add more personal things about me but
+        for now it fulfills its role of introducing me.
   
   soft:
     title: Soft skills
@@ -37,6 +40,14 @@ en:
         name: Teamwork
         desc: >-
               It is always good to have companions you can trust :)
+      autodidact:
+        name: Self-taught person
+        desc: >-
+              I can learn all kinds of things on my own.
+      trustworthy:
+        name: Trustworthy
+        desc: >-
+              You can trust me :)
 
   skills:
     title: Skills
@@ -44,6 +55,8 @@ en:
       title: Programming languages
     olangs:
       title: Other types of computer languages
+    otechs:
+      title: Other techologies of interest
     libs:
       title: Libraries and frameworks of interest
     dbs:
@@ -76,14 +89,16 @@ es:
       - >-
         Soy un desarrollador uruguayo de 22 años que ha estado interesado en la programación desde joven.
         Tuve mi primer contacto con el mundo de la programación a los 12 años y comencé a aprender seriamente
-        a los 15 gracias a la ayuda de 2 amigos que me enseñaron sobre el software libre.
+        a los 15 gracias a la ayuda de 2 amigos que me enseñaron sobre el software libre. A partir de ahí
+        fui totalmente autodidacta y fui aprendiendo variedad de temas que me fueron interesando hasta llegar
+        a saber todo lo que se hoy en día.
       - >-
-        Desde ahí, comencé a aprender todo tipo de cosas que me parecían interesantes, desde desarrollo web
-        hasta lenguaje ensamblador y temas relacionados a la electrónica.
+        Mis lenguajes de programación favoritos a la hora de escribir esto son Dart, TypeScript, Python y C, y
+        ando interesado en aprender otros lenguajes y tecnologías como Rust cuando tenga la motivación y el
+        tiempo para ello. Me gusta mantenerme al día al menos con conocimientos teóricos sobre cosas nuevas e interesantes.
       - >-
-        Amo programar y siempre estoy aprendiendo cosas nuevas a medida que las necesito para lograr algo.
-        Sin embargo, aun no cuento con experiencia laboral como desarrollador así que me encuentro en búsqueda
-        de mi primer empleo como tal.
+        Me gustaría re diseñar este pagina en su debido momento y agregar también cosas más personales sobre mi
+        pero por ahora cumple su rol de presentarme.
 
   soft:
     title: Soft skills
@@ -105,6 +120,14 @@ es:
         name: Trabajo en equipo
         desc: >-
               Dos cabezas piensan mejor que una. Siempre es bueno tener compañeros en quienes confiar :)
+      autodidact:
+        name: Autodidacta
+        desc: >-
+              Puedo aprender por mi cuenta todo tipo de cosas.
+      trustworthy:
+        name: Confiable
+        desc: >-
+              Puedes confiar en mi :)
     
     
   skills:
@@ -113,6 +136,8 @@ es:
       title: Lenguajes de programación
     olangs:
       title: Otros tipos de lenguajes informáticos
+    otechs:
+      title: Otras tecnologías de posible interés
     libs:
       title: Librerías y frameworks de interés
     dbs:

@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import SkillItem from '../components/SkillItem';
 import {showFromBottomPreset} from '../animations/presets';
 
-import {langs, libs, other, hlangs, olangs, dbs} from '../data/skills';
+import {langs, /*libs, other,*/ hlangs, olangs, dbs, otechs} from '../data/skills';
 import Language from '../contexts/language';
 
 const Container = styled.section`
@@ -123,9 +123,10 @@ export default function () {
 
       <Category datasrc={langs}>{s.skills.langs.title}</Category>
       <Category datasrc={olangs}>{s.skills.olangs.title}</Category>
-      <Category datasrc={libs}>{s.skills.libs.title}</Category>
+      <Category datasrc={otechs}>{s.skills.otechs.title}</Category>
+      {/*<Category datasrc={libs}>{s.skills.libs.title}</Category>*/}
       <Category datasrc={dbs}>{s.skills.dbs.title}</Category>
-      <Category datasrc={other}>{s.skills.other.title}</Category>
+      {/*<Category datasrc={other}>{s.skills.other.title}</Category>*/}
       <Category datasrc={hlangs[s.currentLangKey]}>{s.skills.hlangs.title}</Category>
     </Container>
   );
