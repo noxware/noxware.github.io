@@ -21,7 +21,9 @@ interface Props {
 export default function (props: Props) {
   return (
     <Container className={`circular-image ${props.className}`}>
-      <Image {...props} />
+      <a href={props.src}>
+        <Image {...props} />
+      </a>
     </Container>
   );
 }

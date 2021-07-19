@@ -94,8 +94,8 @@ const Photo = styled(CircularImage).attrs<AnimatedProps>(props => {
       return {animationPreset: showFromBottomPreset}
   }
 })<AnimatedProps>`
-  height: 150px;
-  width: 150px;
+  height: 170px;
+  width: 170px;
   margin-bottom: 2rem;
 
   opacity: 0%;
@@ -117,7 +117,7 @@ export default () => {
       <Title className='title'>{s.about.title}</Title>
         <VSensor onChange={visibilityHandler} partialVisibility>
           <SpeakContainer className='speak'>
-            <Photo animated={animated} alt='cat' src={me}/>
+            <Photo animated={animated} alt='cat' src={me} />
             <ParagraphContainer animated={animated}>
               <Paragraph>
                 {s.about.paragraphs[0]}
