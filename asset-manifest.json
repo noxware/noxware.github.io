@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.4ffc0411.chunk.js",
-    "main.js.map": "/static/js/main.4ffc0411.chunk.js.map",
+    "main.js": "/static/js/main.24d428c9.chunk.js",
+    "main.js.map": "/static/js/main.24d428c9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.50ed05b9.js",
     "runtime-main.js.map": "/static/js/runtime-main.50ed05b9.js.map",
     "static/js/2.d2651459.chunk.js": "/static/js/2.d2651459.chunk.js",
     "static/js/2.d2651459.chunk.js.map": "/static/js/2.d2651459.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0a96b4cb1e977c26f45d63d0d3e16980.js": "/precache-manifest.0a96b4cb1e977c26f45d63d0d3e16980.js",
+    "precache-manifest.e5b4e1997a5ea608d48fd1a68a1c9962.js": "/precache-manifest.e5b4e1997a5ea608d48fd1a68a1c9962.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.d2651459.chunk.js.LICENSE.txt": "/static/js/2.d2651459.chunk.js.LICENSE.txt",
     "static/media/Arduino.svg": "/static/media/Arduino.6fa02da1.svg",
@@ -58,6 +58,6 @@
   "entrypoints": [
     "static/js/runtime-main.50ed05b9.js",
     "static/js/2.d2651459.chunk.js",
-    "static/js/main.4ffc0411.chunk.js"
+    "static/js/main.24d428c9.chunk.js"
   ]
 }
