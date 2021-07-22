@@ -1,7 +1,7 @@
 en:
   intro:
     title: Hi, I'm Franco Profeti
-    subtitle: A developer from Uruguay passionate about open source technologies
+    subtitle: A developer from Uruguay who likes cats and programming
 
   about:
     title: About me
@@ -19,7 +19,7 @@ en:
         new and interesting things.
       - >-
         I would like to redesign this page when I have time and also add more personal things about me but
-        for now it fulfills its role of introducing me.
+        for now it fulfills its role of introducing me. If you want to know more about me, let's chat.
   
   soft:
     title: Soft skills
@@ -81,7 +81,7 @@ en:
 es:
   intro:
     title: Hola, soy Franco Profeti
-    subtitle: Un desarrollador de Uruguay apasionado por el software libre
+    subtitle: Un desarrollador de Uruguay al que le gustan los gatos y programar
 
   about:
     title: Sobre mi
@@ -98,7 +98,7 @@ es:
         tiempo para ello. Me gusta mantenerme al día al menos con conocimientos teóricos sobre cosas nuevas e interesantes.
       - >-
         Me gustaría re diseñar esta página en su debido momento y agregar también cosas más personales sobre mi pero por
-        ahora cumple su rol de presentarme.
+        ahora cumple su rol de presentarme. Si quieres saber más sobre mí, charlemos.
 
   soft:
     title: Soft skills
