@@ -7,7 +7,7 @@ en:
     title: About me
     paragraphs:
       - >-
-        I'm a 22 years old developer from Uruguay who has been interested in programming since young.
+        I'm a 24 years old developer from Uruguay who has been interested in programming since young.
         I had my first contact with the world of programming at the age of 12 and I began to learn how to
         program for real at the age of 15 thanks to the help of 2 friends who taught me about
         open source software. From there I was totally self-taught and I was learning a variety of topics
@@ -20,34 +20,34 @@ en:
       - >-
         I would like to redesign this page when I have time and also add more personal things about me but
         for now it fulfills its role of introducing me. If you want to know more about me, let's chat.
-  
+
   soft:
     title: Soft skills
     items:
-      honesty: 
+      honesty:
         name: Honest
         desc: >-
-              I don't like lies and if I lie I might feel bad later :(
-      determination:                
+          I don't like lies and if I lie I might feel bad later :(
+      determination:
         name: Determined
         desc: >-
-              I don't give up easily once I decide to achieve something ;)
+          I don't give up easily once I decide to achieve something ;)
       empathy:
         name: Empathic
         desc: >-
-              I always try to understand people's feelings. The emotions of those around me affect me in various ways.
+          I always try to understand people's feelings. The emotions of those around me affect me in various ways.
       teamwork:
         name: Teamwork
         desc: >-
-              It is always good to have companions you can trust :)
+          It is always good to have companions you can trust :)
       autodidact:
         name: Self-taught person
         desc: >-
-              I can learn all kinds of things on my own.
+          I can learn all kinds of things on my own.
       trustworthy:
         name: Trustworthy
         desc: >-
-              You can trust me :)
+          You can trust me :)
 
   skills:
     title: Skills
@@ -72,12 +72,12 @@ en:
         - id: en
           name: English
           desc: Intermediate
-  
+
   links:
     title: Links and contact
     switch: Switch language
     thisPage: This page's source code
-    
+
 es:
   intro:
     title: Hola, soy Franco Profeti
@@ -103,33 +103,32 @@ es:
   soft:
     title: Soft skills
     items:
-      honesty: 
+      honesty:
         name: Honesto
         desc: >-
-              No me agradan las mentiras y si miento posiblemente me sienta mal luego :(
-      determination:                
+          No me agradan las mentiras y si miento posiblemente me sienta mal luego :(
+      determination:
         name: Determinado
         desc: >-
-              No me rindo facilmente una vez que me decidi a lograr algo ;)
+          No me rindo facilmente una vez que me decidi a lograr algo ;)
       empathy:
         name: Empatico
         desc: >-
-              Siempre intento comprender los sentimientos de los demas. Las emociones de quienes me rodean
-              me afectan de varias maneras.
+          Siempre intento comprender los sentimientos de los demas. Las emociones de quienes me rodean
+          me afectan de varias maneras.
       teamwork:
         name: Trabajo en equipo
         desc: >-
-              Dos cabezas piensan mejor que una. Siempre es bueno tener compañeros en quienes confiar :)
+          Dos cabezas piensan mejor que una. Siempre es bueno tener compañeros en quienes confiar :)
       autodidact:
         name: Autodidacta
         desc: >-
-              Puedo aprender por mi cuenta todo tipo de cosas.
+          Puedo aprender por mi cuenta todo tipo de cosas.
       trustworthy:
         name: Confiable
         desc: >-
-              Puedes confiar en mi :)
-    
-    
+          Puedes confiar en mi :)
+
   skills:
     title: Habilidades
     langs:
@@ -153,9 +152,8 @@ es:
         - id: en
           name: Ingles
           desc: Intermedio
-  
+
   links:
     title: Enlaces y contacto
     switch: Cambiar de idioma
     thisPage: Codigo fuente de esta pagina
-
