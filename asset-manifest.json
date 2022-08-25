@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.24d428c9.chunk.js",
-    "main.js.map": "/static/js/main.24d428c9.chunk.js.map",
+    "main.js": "/static/js/main.ab6f5caa.chunk.js",
+    "main.js.map": "/static/js/main.ab6f5caa.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.50ed05b9.js",
     "runtime-main.js.map": "/static/js/runtime-main.50ed05b9.js.map",
     "static/js/2.d2651459.chunk.js": "/static/js/2.d2651459.chunk.js",
     "static/js/2.d2651459.chunk.js.map": "/static/js/2.d2651459.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b7802572b57af8a3b82019184c3966c0.js": "/precache-manifest.b7802572b57af8a3b82019184c3966c0.js",
+    "precache-manifest.50b9c2220f206fe1435f5c8c672121eb.js": "/precache-manifest.50b9c2220f206fe1435f5c8c672121eb.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.d2651459.chunk.js.LICENSE.txt": "/static/js/2.d2651459.chunk.js.LICENSE.txt",
     "static/media/Arduino.svg": "/static/media/Arduino.6fa02da1.svg",
@@ -15,6 +15,7 @@
     "static/media/C.svg": "/static/media/C.00cc5bdb.svg",
     "static/media/CSS.svg": "/static/media/CSS.a7f23eda.svg",
     "static/media/Dart.svg": "/static/media/Dart.86f0a4f7.svg",
+    "static/media/Elixir.svg": "/static/media/Elixir.b14e8e16.svg",
     "static/media/Express.svg": "/static/media/Express.9de32921.svg",
     "static/media/FLTK.svg": "/static/media/FLTK.0d40fc3b.svg",
     "static/media/Firebase.svg": "/static/media/Firebase.04df79aa.svg",
@@ -30,6 +31,7 @@
     "static/media/MongoDB.svg": "/static/media/MongoDB.207cca10.svg",
     "static/media/MySQL.svg": "/static/media/MySQL.dce61c45.svg",
     "static/media/Node.js.svg": "/static/media/Node.js.69a09ead.svg",
+    "static/media/Phoenix.svg": "/static/media/Phoenix.43646cbb.svg",
     "static/media/PostgreSQL.svg": "/static/media/PostgreSQL.d7c985e7.svg",
     "static/media/Puppeteer.svg": "/static/media/Puppeteer.47b2ae00.svg",
     "static/media/Python.svg": "/static/media/Python.6eeb4fa2.svg",
@@ -44,6 +46,7 @@
     "static/media/Selenium.svg": "/static/media/Selenium.de37387d.svg",
     "static/media/Socket.IO.svg": "/static/media/Socket.IO.b13f1bab.svg",
     "static/media/Typescript.svg": "/static/media/Typescript.f6f43066.svg",
+    "static/media/Vue.svg": "/static/media/Vue.22efb7c2.svg",
     "static/media/autodidact.svg": "/static/media/autodidact.ea00a6a9.svg",
     "static/media/determination.svg": "/static/media/determination.9cfa2faa.svg",
     "static/media/empathy.svg": "/static/media/empathy.ccb78c29.svg",
@@ -58,6 +61,6 @@
   "entrypoints": [
     "static/js/runtime-main.50ed05b9.js",
     "static/js/2.d2651459.chunk.js",
-    "static/js/main.24d428c9.chunk.js"
+    "static/js/main.ab6f5caa.chunk.js"
   ]
 }
