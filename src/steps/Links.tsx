@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
+import React, { useContext } from "react";
+import styled from "styled-components";
 
-import Language from '../contexts/language';
+import Language from "../contexts/language";
 
 const Container = styled.section`
   display: flex;
@@ -13,7 +13,7 @@ const Container = styled.section`
   /*background-image: radial-gradient(ellipse closest-side at 50% 50%, #3a3f45, #37383c 25%, #343233);*/
   background-color: #08f;
   color: #ffffff;
-`
+`;
 
 const Title = styled.h1`
   font-size: 1.7em;
@@ -21,13 +21,13 @@ const Title = styled.h1`
   @media (min-width: 600px) {
     font-size: 2.2em;
   }
-`
+`;
 
 const Link = styled.a`
   text-decoration: none;
   color: #fff;
   padding: 2px;
-`
+`;
 
 const LangSwitch = styled.button`
   background-color: #08f; /* Green */
@@ -45,14 +45,14 @@ const LangSwitch = styled.button`
   }
 
   &:hover {
-    background-color:  #2af;
+    background-color: #2af;
   }
-`
+`;
 
 const FlexBreak = styled.div`
   width: 100%;
   height: 0;
-`
+`;
 
 const List = styled.ul`
   display: flex;
@@ -60,14 +60,14 @@ const List = styled.ul`
   align-items: center;
   justify-content: center;
   width: 100%;
-  
+
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 
   @media (min-width: 900px) {
     flex-direction: row;
   }
-`
+`;
 
 const Item = styled.li`
   font-size: 0.8em;
@@ -82,19 +82,23 @@ const Item = styled.li`
 
     &::before {
       display: inline-block;
-      content: '|';
+      content: "|";
       margin-right: 1em;
       margin-left: 1em;
     }
 
     &:first-of-type::before {
-        display: none;
+      display: none;
     }
   }
-`
+`;
 
 function ItemWithLink(props: any) {
-  return <Item><Link {...props} /></Item>
+  return (
+    <Item>
+      <Link {...props} />
+    </Item>
+  );
 }
 
 export default function () {
@@ -106,14 +110,14 @@ export default function () {
 
       <FlexBreak />
       <List>
-        <ItemWithLink href='mailto:fprofeti98@gmail.com'>Email (fprofeti98@gmail.com)</ItemWithLink>
-        <ItemWithLink href='https://github.com/Noxware'>Github</ItemWithLink>
-        <ItemWithLink href='https://github.com/Noxware/noxware.github.io'>{s.links.thisPage}</ItemWithLink>
+        <ItemWithLink href="https://github.com/Noxware">Github</ItemWithLink>
+        <ItemWithLink href="https://github.com/Noxware/noxware.github.io">
+          {s.links.thisPage}
+        </ItemWithLink>
       </List>
-      
 
       <FlexBreak />
-      <LangSwitch onClick={()=>s.setLang('')}>{s.links.switch}</LangSwitch>
+      <LangSwitch onClick={() => s.setLang("")}>{s.links.switch}</LangSwitch>
     </Container>
   );
 }
