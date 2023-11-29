@@ -110,10 +110,10 @@ export default function () {
 
       <FlexBreak />
       <List>
-        <ItemWithLink href="https://github.com/Noxware">Github</ItemWithLink>
-        <ItemWithLink href="https://github.com/Noxware/noxware.github.io">
-          {s.links.thisPage}
+        <ItemWithLink href="https://www.linkedin.com/in/franco-profeti/">
+          Linkedin
         </ItemWithLink>
+        <ItemWithLink href="https://github.com/Noxware">Github</ItemWithLink>
       </List>
 
       <FlexBreak />

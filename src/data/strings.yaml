@@ -76,7 +76,6 @@ en:
   links:
     title: Links and contact
     switch: Switch language
-    thisPage: This page's source code
 
 es:
   intro:
@@ -156,4 +155,3 @@ es:
   links:
     title: Enlaces y contacto
     switch: Cambiar de idioma
-    thisPage: Codigo fuente de esta pagina
