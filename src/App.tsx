@@ -1,19 +1,18 @@
-
 // External libraries
-import React, { useState } from 'react';
-import styled, {createGlobalStyle} from 'styled-components';
+import React, { useState } from "react";
+import styled, { createGlobalStyle } from "styled-components";
 
 // Steps
-import Intro from './steps/Intro';
-import About from './steps/About';
-import SoftSkills from './steps/SoftSkills';
-import Skills from './steps/Skills';
-import Links from './steps/Links';
-import Language from './steps/Language';
+import Intro from "./steps/Intro";
+import About from "./steps/About";
+import SoftSkills from "./steps/SoftSkills";
+import Skills from "./steps/Skills";
+import Links from "./steps/Links";
+import Language from "./steps/Language";
 
 // Other
-import LanguageContext from './contexts/language';
-import strings from './data/strings.yaml';
+import LanguageContext from "./contexts/language";
+import strings from "./data/strings.yaml";
 
 const ResetStyles = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -61,7 +60,7 @@ const ResetStyles = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-`
+`;
 /**
  * Custom base styles.
  */
@@ -85,45 +84,42 @@ const BaseStyles = createGlobalStyle`
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     cursor: pointer;
   }
-`
+`;
 
 const Main = styled.main`
   display: flex;
   flex: 1;
   flex-direction: column;
-`
-
+`;
 
 /**
  * Main web app component.
  */
 function App() {
   // Lang can be 'es', 'en' or ''. If the string is empty, the language selection screen will be displayed.
-  const [lang, setLang] = useState(window.localStorage.getItem('lang') || '');
+  const [lang, setLang] = useState(window.localStorage.getItem("lang") || "en");
 
-  const currentLang = strings[lang] || {};
+  const currentLang = strings[lang];
   currentLang.setLang = (l: string) => setLang(l);
   currentLang.currentLangKey = lang;
 
   return (
     <LanguageContext.Provider value={currentLang}>
-        <ResetStyles />
-        <BaseStyles />
-        <Main>
-          {
-            (lang === '') ? 
-              <Language />
-            :
-              <>
-                <Intro />
-                <About />
-                <SoftSkills />
-                <Skills />
-                <Links />
-              </>
-          }
-          
-        </Main>
+      <ResetStyles />
+      <BaseStyles />
+      <Main>
+        {lang === "" ? (
+          <Language />
+        ) : (
+          <>
+            <Intro />
+            <About />
+            <SoftSkills />
+            <Skills />
+            <Links />
+          </>
+        )}
+      </Main>
     </LanguageContext.Provider>
   );
 }
