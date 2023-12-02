@@ -7,14 +7,14 @@ en:
     title: About me
     paragraphs:
       - >-
-        I'm a 24 years old developer from Uruguay who has been interested in programming since young.
+        I'm a 25 years old developer from Uruguay who has been interested in programming since young.
         I had my first contact with the world of programming at the age of 12 and I began to learn how to
         program for real at the age of 15 thanks to the help of 2 friends who taught me about
         open source software. From there I was totally self-taught and I was learning a variety of topics
         that interested me until I got to know everything I know today.
       - >-
-        My favorite programming languages at the time of writing this are Dart, TypeScript, Python and C,
-        and I'm interested in learning other languages and technologies like Rust when I have the
+        My favorite programming languages at the time of writing this are Rust, TypeScript and Elixir,
+        and I'm interested in learning other new technologies when I have the
         motivation and time to do so. I like to keep up to date at least with theoretical knowledge about
         new and interesting things.
       - >-
@@ -86,14 +86,14 @@ es:
     title: Sobre mi
     paragraphs:
       - >-
-        Soy un desarrollador uruguayo de 24 años que ha estado interesado en la programación desde joven.
+        Soy un desarrollador uruguayo de 25 años que ha estado interesado en la programación desde joven.
         Tuve mi primer contacto con el mundo de la programación a los 12 años y comencé a aprender seriamente
         a los 15 gracias a la ayuda de 2 amigos que me enseñaron sobre el software libre. A partir de ahí
         fui totalmente autodidacta y fui aprendiendo variedad de temas que me fueron interesando hasta llegar
         a saber todo lo que se hoy en día.
       - >-
-        Mis lenguajes de programación favoritos a la hora de escribir esto son Dart, TypeScript, Python y C, y
-        ando interesado en aprender otros lenguajes y tecnologías como Rust cuando tenga la motivación y el
+        Mis lenguajes de programación favoritos a la hora de escribir esto son Rust, TypeScript y Elixir, y
+        ando interesado en aprender otros nuevas tecnologías cuando tenga la motivación y el
         tiempo para ello. Me gusta mantenerme al día al menos con conocimientos teóricos sobre cosas nuevas e interesantes.
       - >-
         Me gustaría re diseñar esta página en su debido momento y agregar también cosas más personales sobre mi pero por
