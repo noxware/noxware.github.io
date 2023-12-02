@@ -99,7 +99,7 @@ function App() {
   // Lang can be 'es', 'en' or ''. If the string is empty, the language selection screen will be displayed.
   const [lang, setLang] = useState(window.localStorage.getItem("lang") || "en");
 
-  const currentLang = strings[lang];
+  const currentLang = strings[lang] || {};
   currentLang.setLang = (l: string) => setLang(l);
   currentLang.currentLangKey = lang;
 
