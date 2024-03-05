@@ -4,12 +4,10 @@ import styled, { FlattenSimpleInterpolation } from 'styled-components';
 import Language from '../contexts/language';
 import SoftSkill from '../components/SoftSkill';
 
-import empathyImg from '../assets/soft/empathy.svg';
 import determinationImg from '../assets/soft/determination.svg';
 import honestyImg from '../assets/soft/honesty.svg';
 import teamworkImg from '../assets/soft/teamwork.svg';
 import autodidactImg from '../assets/soft/autodidact.svg';
-import trustworthyImg from '../assets/soft/trustworthy.svg';
 
 const Container = styled.section`
   display: flex;
@@ -62,9 +60,7 @@ export default function () {
           <SoftSkill image={determinationImg} {...s.soft.items.determination}></SoftSkill>
           <SoftSkill right image={honestyImg} {...s.soft.items.honesty}></SoftSkill>
           <SoftSkill image={teamworkImg} {...s.soft.items.teamwork}></SoftSkill>
-          <SoftSkill right image={empathyImg} {...s.soft.items.empathy}></SoftSkill>
-          <SoftSkill image={autodidactImg} {...s.soft.items.autodidact}></SoftSkill>
-          <SoftSkill right image={trustworthyImg} {...s.soft.items.trustworthy}></SoftSkill>
+          <SoftSkill right image={autodidactImg} {...s.soft.items.autodidact}></SoftSkill>
         </SkillsContainer>
     </Container>
   );

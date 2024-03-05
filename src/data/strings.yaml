@@ -32,10 +32,6 @@ en:
         name: Determined
         desc: >-
           I don't give up easily once I decide to achieve something ;)
-      empathy:
-        name: Empathic
-        desc: >-
-          I always try to understand people's feelings. The emotions of those around me affect me in various ways.
       teamwork:
         name: Teamwork
         desc: >-
@@ -44,10 +40,6 @@ en:
         name: Self-taught person
         desc: >-
           I can learn all kinds of things on my own.
-      trustworthy:
-        name: Trustworthy
-        desc: >-
-          You can trust me :)
 
   skills:
     title: Skills
@@ -110,11 +102,6 @@ es:
         name: Determinado
         desc: >-
           No me rindo facilmente una vez que me decidi a lograr algo ;)
-      empathy:
-        name: Empatico
-        desc: >-
-          Siempre intento comprender los sentimientos de los demas. Las emociones de quienes me rodean
-          me afectan de varias maneras.
       teamwork:
         name: Trabajo en equipo
         desc: >-
@@ -123,10 +110,6 @@ es:
         name: Autodidacta
         desc: >-
           Puedo aprender por mi cuenta todo tipo de cosas.
-      trustworthy:
-        name: Confiable
-        desc: >-
-          Puedes confiar en mi :)
 
   skills:
     title: Habilidades
