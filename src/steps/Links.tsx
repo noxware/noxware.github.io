@@ -113,7 +113,7 @@ export default function () {
         <ItemWithLink href="https://www.linkedin.com/in/franco-profeti/">
           Linkedin
         </ItemWithLink>
-        <ItemWithLink href="https://github.com/Noxware">Github</ItemWithLink>
+        <ItemWithLink href="https://github.com/noxware">Github</ItemWithLink>
       </List>
 
       <FlexBreak />
