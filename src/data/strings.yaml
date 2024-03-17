@@ -32,10 +32,6 @@ en:
         name: Determined
         desc: >-
           I don't give up easily once I decide to achieve something ;)
-      empathy:
-        name: Empathic
-        desc: >-
-          I always try to understand people's feelings. The emotions of those around me affect me in various ways.
       teamwork:
         name: Teamwork
         desc: >-
@@ -44,10 +40,6 @@ en:
         name: Self-taught person
         desc: >-
           I can learn all kinds of things on my own.
-      trustworthy:
-        name: Trustworthy
-        desc: >-
-          You can trust me :)
 
   skills:
     title: Skills
@@ -75,83 +67,3 @@ en:
 
   links:
     title: Links and contact
-    switch: Switch language
-
-es:
-  intro:
-    title: Hola, soy Franco Profeti
-    subtitle: Un desarrollador de Uruguay al que le gustan los gatos y programar
-
-  about:
-    title: Sobre mi
-    paragraphs:
-      - >-
-        Soy un desarrollador uruguayo de 25 años que ha estado interesado en la programación desde joven.
-        Tuve mi primer contacto con el mundo de la programación a los 12 años y comencé a aprender seriamente
-        a los 15 gracias a la ayuda de 2 amigos que me enseñaron sobre el software libre. A partir de ahí
-        fui totalmente autodidacta y fui aprendiendo variedad de temas que me fueron interesando hasta llegar
-        a saber todo lo que se hoy en día.
-      - >-
-        Mis lenguajes de programación favoritos a la hora de escribir esto son Rust, TypeScript y Elixir, y
-        ando interesado en aprender otros nuevas tecnologías cuando tenga la motivación y el
-        tiempo para ello. Me gusta mantenerme al día al menos con conocimientos teóricos sobre cosas nuevas e interesantes.
-      - >-
-        Me gustaría re diseñar esta página en su debido momento y agregar también cosas más personales sobre mi pero por
-        ahora cumple su rol de presentarme. Si quieres saber más sobre mí, charlemos.
-
-  soft:
-    title: Soft skills
-    items:
-      honesty:
-        name: Honesto
-        desc: >-
-          No me agradan las mentiras y si miento posiblemente me sienta mal luego :(
-      determination:
-        name: Determinado
-        desc: >-
-          No me rindo facilmente una vez que me decidi a lograr algo ;)
-      empathy:
-        name: Empatico
-        desc: >-
-          Siempre intento comprender los sentimientos de los demas. Las emociones de quienes me rodean
-          me afectan de varias maneras.
-      teamwork:
-        name: Trabajo en equipo
-        desc: >-
-          Dos cabezas piensan mejor que una. Siempre es bueno tener compañeros en quienes confiar :)
-      autodidact:
-        name: Autodidacta
-        desc: >-
-          Puedo aprender por mi cuenta todo tipo de cosas.
-      trustworthy:
-        name: Confiable
-        desc: >-
-          Puedes confiar en mi :)
-
-  skills:
-    title: Habilidades
-    langs:
-      title: Lenguajes de programación
-    olangs:
-      title: Otros tipos de lenguajes informáticos
-    otechs:
-      title: Otras tecnologías de posible interés
-    libs:
-      title: Librerías y frameworks de interés
-    dbs:
-      title: Bases de datos
-    other:
-      title: Otros
-    hlangs:
-      title: Lenguajes humanos
-      items:
-        - id: es
-          name: Español
-          desc: Nativo
-        - id: en
-          name: Ingles
-          desc: Intermedio
-
-  links:
-    title: Enlaces y contacto
-    switch: Cambiar de idioma

@@ -29,26 +29,6 @@ const Link = styled.a`
   padding: 2px;
 `;
 
-const LangSwitch = styled.button`
-  background-color: #08f; /* Green */
-  border: 1px solid white;
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.8em;
-  border-radius: 5px;
-
-  @media (min-width: 420px) {
-    font-size: 1em;
-  }
-
-  &:hover {
-    background-color: #2af;
-  }
-`;
-
 const FlexBreak = styled.div`
   width: 100%;
   height: 0;
@@ -62,7 +42,6 @@ const List = styled.ul`
   width: 100%;
 
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 
   @media (min-width: 900px) {
     flex-direction: row;
@@ -113,11 +92,8 @@ export default function () {
         <ItemWithLink href="https://www.linkedin.com/in/franco-profeti/">
           Linkedin
         </ItemWithLink>
-        <ItemWithLink href="https://github.com/Noxware">Github</ItemWithLink>
+        <ItemWithLink href="https://github.com/noxware">Github</ItemWithLink>
       </List>
-
-      <FlexBreak />
-      <LangSwitch onClick={() => s.setLang("")}>{s.links.switch}</LangSwitch>
     </Container>
   );
 }
