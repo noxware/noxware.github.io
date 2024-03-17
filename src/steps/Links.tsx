@@ -29,26 +29,6 @@ const Link = styled.a`
   padding: 2px;
 `;
 
-const LangSwitch = styled.button`
-  background-color: #08f; /* Green */
-  border: 1px solid white;
-  color: white;
-  padding: 1rem 2rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.8em;
-  border-radius: 5px;
-
-  @media (min-width: 420px) {
-    font-size: 1em;
-  }
-
-  &:hover {
-    background-color: #2af;
-  }
-`;
-
 const FlexBreak = styled.div`
   width: 100%;
   height: 0;
