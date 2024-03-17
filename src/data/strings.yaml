@@ -27,19 +27,19 @@ en:
       honesty:
         name: Honest
         desc: >-
-          I don't like lies and if I lie I might feel bad later :(
+          I don't like lies and if I lie I might feel bad later
       determination:
         name: Determined
         desc: >-
-          I don't give up easily once I decide to achieve something ;)
+          I don't give up easily once I decide to achieve something
       teamwork:
-        name: Teamwork
+        name: Multiplayer
         desc: >-
-          It is always good to have companions you can trust :)
+          We can overcome any obstacle with teamwork
       autodidact:
         name: Self-taught person
         desc: >-
-          I can learn all kinds of things on my own.
+          I learn all kinds of things on my own
 
   skills:
     title: Skills
