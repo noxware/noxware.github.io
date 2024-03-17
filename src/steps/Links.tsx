@@ -62,7 +62,6 @@ const List = styled.ul`
   width: 100%;
 
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 
   @media (min-width: 900px) {
     flex-direction: row;
@@ -115,9 +114,6 @@ export default function () {
         </ItemWithLink>
         <ItemWithLink href="https://github.com/noxware">Github</ItemWithLink>
       </List>
-
-      <FlexBreak />
-      <LangSwitch onClick={() => s.setLang("")}>{s.links.switch}</LangSwitch>
     </Container>
   );
 }

@@ -1,5 +1,5 @@
 // External libraries
-import React, { useState } from "react";
+import React from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
 // Steps
@@ -8,7 +8,6 @@ import About from "./steps/About";
 import SoftSkills from "./steps/SoftSkills";
 import Skills from "./steps/Skills";
 import Links from "./steps/Links";
-import Language from "./steps/Language";
 
 // Other
 import LanguageContext from "./contexts/language";
@@ -97,7 +96,9 @@ const Main = styled.main`
  */
 function App() {
   // Lang can be 'es', 'en' or ''. If the string is empty, the language selection screen will be displayed.
-  const [lang, setLang] = useState(window.localStorage.getItem("lang") || "en");
+  // const [lang, setLang] = useState(window.localStorage.getItem("lang") || "en");
+  const lang: string = "en";
+  const setLang = (_l: string) => {};
 
   const currentLang = strings[lang] || {};
   currentLang.setLang = (l: string) => setLang(l);
@@ -108,17 +109,11 @@ function App() {
       <ResetStyles />
       <BaseStyles />
       <Main>
-        {lang === "" ? (
-          <Language />
-        ) : (
-          <>
-            <Intro />
-            <About />
-            <SoftSkills />
-            <Skills />
-            <Links />
-          </>
-        )}
+        <Intro />
+        <About />
+        <SoftSkills />
+        <Skills />
+        <Links />
       </Main>
     </LanguageContext.Provider>
   );
