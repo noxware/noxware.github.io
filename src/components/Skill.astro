@@ -8,7 +8,7 @@ interface Props {
 const { image, title, description } = Astro.props;
 ---
 
-<article class="m-[0.4em] flex h-[100px] w-20 flex-col items-center justify-end rounded-[10px] border border-[#dbdbdb] bg-white p-[1.2em] text-[11px] min-[600px]:h-[130px] min-[600px]:w-[110px] min-[600px]:text-[15px] min-[1000px]:h-[140px] min-[1000px]:w-[120px]">
+<article class="m-[0.4em] flex h-25 w-20 flex-col items-center justify-end rounded-[10px] border border-[#dbdbdb] bg-white p-[1.2em] text-[11px] min-[600px]:h-32.5 min-[600px]:w-27.5 min-[600px]:text-[15px] min-[1000px]:h-35 min-[1000px]:w-30">
   <img class="mb-auto h-0 w-full grow object-scale-down" src={image} alt={`${title} logo`} loading="lazy" />
   <div class="mt-[1em] flex h-[2em] flex-col justify-center overflow-visible">
     <span class="text-center leading-[1em]">{title}</span>

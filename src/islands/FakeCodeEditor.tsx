@@ -17,9 +17,9 @@ const FakeCodeEditor = forwardRef<HTMLDivElement, Props>(({ code, className = ""
     <div
       ref={ref}
       style={style}
-      className={`w-full max-w-[720px] rounded-[10px] bg-black p-[15px] font-mono text-white shadow-[0_2px_4px_-1px_rgba(0,0,0,0.2),0_4px_5px_0_rgba(0,0,0,0.14),0_1px_10px_0_rgba(0,0,0,0.12)] ${className}`}
+      className={`w-full max-w-180 rounded-[10px] bg-black p-3.75 font-mono text-white shadow-[0_2px_4px_-1px_rgba(0,0,0,0.2),0_4px_5px_0_rgba(0,0,0,0.14),0_1px_10px_0_rgba(0,0,0,0.12)] ${className}`}
     >
-      <div className="mb-[5px]" aria-hidden="true">
+      <div className="mb-1.25" aria-hidden="true">
         <svg className="inline align-baseline" xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
           <g fill="none" fillRule="evenodd" transform="translate(1 1)">
             <circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" strokeWidth=".5" />
