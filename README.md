@@ -1,11 +1,11 @@
 # noxware.dev
 
-A minimalistic portfolio site I started back in 2020 while looking for a job, now mantained with little effort just as a frontdoor to my domain.
+A small static portfolio/frontdoor for [noxware.dev](https://noxware.dev), built with Astro and Tailwind CSS.
 
-> So, don't worry if it looks a bit out of date.
+## Commands
 
-[Web site](https://noxware.dev)
+- `npm run dev` starts the local dev server.
+- `npm run build` builds the static site.
+- `npm run preview` previews the production build locally.
 
-**Important:** Some images are not logos but images owned by me. Do not use without permission.
-For example all images in the soft skills section, the SQL image, the English (USA) flag and the Spanish (Uruguay) flag are
-owned by me.
+**Important:** Some images are not logos but images owned by me. Do not use without permission. For example all images in the soft skills section, the SQL image, the English (USA) flag and the Spanish (Uruguay) flag are owned by me.

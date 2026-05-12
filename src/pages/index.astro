@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import About from "../sections/About.astro";
+import Intro from "../sections/Intro.astro";
+import Links from "../sections/Links.astro";
+import Skills from "../sections/Skills.astro";
+import SoftSkills from "../sections/SoftSkills.astro";
+---
+
+<BaseLayout>
+  <main class="flex flex-1 flex-col">
+    <Intro />
+    <About />
+    <SoftSkills />
+    <Skills />
+    <Links />
+  </main>
+</BaseLayout>

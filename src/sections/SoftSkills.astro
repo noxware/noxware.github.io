@@ -1,0 +1,18 @@
+---
+import SectionTitle from "../components/SectionTitle.astro";
+import SoftSkill from "../components/SoftSkill.astro";
+import autodidact from "../assets/soft/autodidact.svg?url";
+import determination from "../assets/soft/determination.svg?url";
+import honesty from "../assets/soft/honesty.svg?url";
+import teamwork from "../assets/soft/teamwork.svg?url";
+---
+
+<section class="flex flex-col items-center justify-center px-8 py-8 md:pb-28">
+  <SectionTitle class="mb-8">Soft skills</SectionTitle>
+  <div class="flex flex-col items-center justify-center md:max-w-[800px] md:flex-row md:flex-wrap">
+    <SoftSkill image={determination} name="Determined" description="I don't give up easily once I decide to achieve something" />
+    <SoftSkill image={honesty} name="Honest" description="I don't like lies and if I lie I might feel bad later" align="right" />
+    <SoftSkill image={teamwork} name="Multiplayer" description="We can overcome any obstacle with teamwork" />
+    <SoftSkill image={autodidact} name="Self-taught person" description="I learn all kinds of things on my own" align="right" />
+  </div>
+</section>

@@ -1,0 +1,12 @@
+---
+interface Props {
+  direction?: "bottom" | "left" | "right" | "top";
+  class?: string;
+}
+
+const { direction = "bottom", class: className = "" } = Astro.props;
+---
+
+<div class:list={["reveal", `reveal-${direction}`, className]}>
+  <slot />
+</div>

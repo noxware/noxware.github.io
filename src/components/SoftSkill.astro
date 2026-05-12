@@ -1,0 +1,26 @@
+---
+import Reveal from "./Reveal.astro";
+
+interface Props {
+  image: string;
+  name: string;
+  description: string;
+  align?: "left" | "right";
+}
+
+const { image, name, description, align = "left" } = Astro.props;
+const revealClass = [
+  "mb-12 flex w-full last:mb-0",
+  align === "right" ? "justify-end self-end" : "justify-start self-start",
+].join(" ");
+---
+
+<Reveal direction="bottom" class={revealClass}>
+  <article class="flex max-w-full items-center">
+    <img class="mr-4 h-20 w-20 object-contain md:h-[100px] md:w-[100px]" src={image} alt="" loading="lazy" />
+    <div class="flex max-w-[400px] flex-col text-[0.9rem] sm:text-base">
+      <h3 class="mb-1 text-[1.3rem] leading-tight">{name}</h3>
+      <p class="leading-snug">{description}</p>
+    </div>
+  </article>
+</Reveal>
