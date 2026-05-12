@@ -1,0 +1,28 @@
+---
+import CircularAvatar from "../components/CircularAvatar.astro";
+import Reveal from "../components/Reveal.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import me from "../assets/about-me/me.jpg";
+---
+
+<section id="about" class="flex flex-col items-center justify-center p-8 min-[730px]:py-28">
+  <SectionTitle class="mb-6">About me</SectionTitle>
+  <div class="flex flex-col items-center justify-center min-[730px]:max-w-250 min-[730px]:flex-row">
+    <Reveal direction="left" class="mb-8 h-42.5 w-42.5 shrink-0 min-[730px]:mr-8">
+      <CircularAvatar image={me} alt="Franco Profeti" class="h-full w-full" />
+    </Reveal>
+    <Reveal direction="right">
+      <blockquote class="max-w-180 min-[730px]:max-w-none">
+        <p class="mb-4 text-center leading-[1.2] min-[600px]:text-[1.1em] min-[730px]:text-left min-[730px]:text-[18px]">
+          I'm a 25 years old developer from Uruguay who has been interested in programming since young. I had my first contact with the world of programming at the age of 12 and I began to learn how to program for real at the age of 15 thanks to the help of 2 friends who taught me about open source software. From there I was totally self-taught and I was learning a variety of topics that interested me until I got to know everything I know today.
+        </p>
+        <p class="mb-4 text-center leading-[1.2] min-[600px]:text-[1.1em] min-[730px]:text-left min-[730px]:text-[18px]">
+          My favorite programming languages at the time of writing this are Rust, TypeScript and Elixir, and I'm interested in learning other new technologies when I have the motivation and time to do so. I like to keep up to date at least with theoretical knowledge about new and interesting things.
+        </p>
+        <p class="text-center leading-[1.2] min-[600px]:text-[1.1em] min-[730px]:text-left min-[730px]:text-[18px]">
+          I would like to redesign this page when I have time and also add more personal things about me but for now it fulfills its role of introducing me. If you want to know more about me, let's chat.
+        </p>
+      </blockquote>
+    </Reveal>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+---
+import BottomWave from "../components/BottomWave.astro";
+import AnimatedCodeEditor from "../islands/AnimatedCodeEditor";
+
+const code = [
+  "%k%from %v%world %k%import %v%cats%x%, %v%myself",
+  "  ",
+  "%k%for %v%cat %k%in %v%cats%x%:",
+  "  %k%if %v%cat%x%.%p%shape %o%== %s%'c'%x%:",
+  "    %v%myself%x%.%p%pet%x%(%v%cat%x%.%p%belly%x%)",
+  "  %k%elif %v%cat%x%.%p%shape %o%== %s%'i'%x%:",
+  "    %v%myself%x%.%p%pet%x%(%v%cat%x%.%p%head%x%, %v%cat%x%.%p%back%x%)",
+  "  %k%elif %v%cat%x%.%p%shape %o%== %s%'/'%x%:",
+  "    %v%myself%x%.%p%pet%x%(%v%cat%x%.%p%head%x%)",
+  "  %k%else%x%:",
+  "    %v%myself%x%.%p%pet%x%(%v%cat%x%.%p%something%x%)",
+  "    ",
+  "  %v%myself%x%.%p%love%x%(%v%cat%x%)",
+].join("\n");
+---
+
+<section class="flex min-h-screen w-full flex-col">
+  <div class="flex flex-1 flex-col items-center justify-center bg-brand p-4 text-white min-[600px]:p-8">
+    <h1 class="mb-4 text-center font-heading text-[2.2em] font-semibold leading-none min-[500px]:text-[2.8em] min-[730px]:text-[3.2em] min-[1280px]:text-[4em]">
+      Hi, I'm Franco Profeti
+    </h1>
+    <p class="mb-4 text-center font-heading text-[1em] font-semibold leading-none text-neutral-200 min-[500px]:text-[1.2em] min-[600px]:mb-12 min-[600px]:text-[1.5em] min-[1000px]:text-[1.7em] min-[1280px]:text-[1.8em]">
+      A developer from Uruguay who likes cats and programming
+    </p>
+    <AnimatedCodeEditor code={code} cursor="%i%" speed={20} client:load />
+  </div>
+  <BottomWave />
+</section>

@@ -1,0 +1,92 @@
+---
+import SectionTitle from "../components/SectionTitle.astro";
+import Skill from "../components/Skill.astro";
+import SkillCategory from "../components/SkillCategory.astro";
+import c from "../assets/langs/C.svg?url";
+import dart from "../assets/langs/Dart.svg?url";
+import elixir from "../assets/langs/Elixir.svg?url";
+import javascript from "../assets/langs/Javascript.svg?url";
+import lua from "../assets/langs/Lua.svg?url";
+import python from "../assets/langs/Python.svg?url";
+import rust from "../assets/langs/Rust.svg?url";
+import typescript from "../assets/langs/Typescript.svg?url";
+import css from "../assets/olangs/CSS.svg?url";
+import html from "../assets/olangs/HTML.svg?url";
+import sass from "../assets/olangs/Sass.svg?url";
+import sql from "../assets/olangs/SQL.svg?url";
+import mongo from "../assets/dbs/MongoDB.svg?url";
+import mysql from "../assets/dbs/MySQL.svg?url";
+import postgres from "../assets/dbs/PostgreSQL.svg?url";
+import sqlite from "../assets/dbs/SQLite.svg?url";
+import alpine from "../assets/otechs/Alpine.js.svg?url";
+import arduino from "../assets/otechs/Arduino.svg?url";
+import bevy from "../assets/otechs/Bevy.png?url";
+import express from "../assets/otechs/Express.svg?url";
+import firebase from "../assets/otechs/Firebase.svg?url";
+import flutter from "../assets/otechs/Flutter.svg?url";
+import gimp from "../assets/otechs/Gimp.svg?url";
+import git from "../assets/otechs/Git.svg?url";
+import linux from "../assets/otechs/Linux.svg?url";
+import phoenix from "../assets/otechs/Phoenix.svg?url";
+import puppeteer from "../assets/otechs/Puppeteer.svg?url";
+import raspberryPi from "../assets/otechs/Raspberry Pi.svg?url";
+import react from "../assets/otechs/React.svg?url";
+import reactNative from "../assets/otechs/React Native.svg?url";
+import tailwind from "../assets/otechs/Tailwind.svg?url";
+import vue from "../assets/otechs/Vue.svg?url";
+import english from "../assets/hlangs/en.png?url";
+import spanish from "../assets/hlangs/es.svg?url";
+---
+
+<section id="skills" class="flex flex-col items-center p-4 min-[730px]:pb-28">
+  <SectionTitle class="mb-6">Skills</SectionTitle>
+
+  <SkillCategory title="Programming languages">
+    <Skill image={c} title="C" />
+    <Skill image={dart} title="Dart" />
+    <Skill image={elixir} title="Elixir" />
+    <Skill image={javascript} title="Javascript" />
+    <Skill image={lua} title="Lua" />
+    <Skill image={python} title="Python" />
+    <Skill image={rust} title="Rust" />
+    <Skill image={typescript} title="Typescript" />
+  </SkillCategory>
+
+  <SkillCategory title="Other types of computer languages">
+    <Skill image={css} title="CSS" />
+    <Skill image={html} title="HTML" />
+    <Skill image={sql} title="SQL" />
+    <Skill image={sass} title="Sass" />
+  </SkillCategory>
+
+  <SkillCategory title="Other techologies of interest">
+    <Skill image={alpine} title="Alpine.js" />
+    <Skill image={arduino} title="Arduino" />
+    <Skill image={bevy} title="Bevy" />
+    <Skill image={express} title="Express" />
+    <Skill image={firebase} title="Firebase" />
+    <Skill image={flutter} title="Flutter" />
+    <Skill image={gimp} title="Gimp" />
+    <Skill image={git} title="Git" />
+    <Skill image={linux} title="Linux" />
+    <Skill image={phoenix} title="Phoenix" />
+    <Skill image={puppeteer} title="Puppeteer" />
+    <Skill image={raspberryPi} title="Raspberry Pi" />
+    <Skill image={reactNative} title="React Native" />
+    <Skill image={react} title="React" />
+    <Skill image={tailwind} title="Tailwind" />
+    <Skill image={vue} title="Vue" />
+  </SkillCategory>
+
+  <SkillCategory title="Databases">
+    <Skill image={mongo} title="MongoDB" />
+    <Skill image={mysql} title="MySQL" />
+    <Skill image={postgres} title="PostgreSQL" />
+    <Skill image={sqlite} title="SQLite" />
+  </SkillCategory>
+
+  <SkillCategory title="Human languages">
+    <Skill image={english} title="English" description="Intermediate" />
+    <Skill image={spanish} title="Spanish" description="Native" />
+  </SkillCategory>
+</section>

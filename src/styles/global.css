@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Roboto", Helvetica, Arial, sans-serif;
+  --font-heading: "Raleway", Helvetica, Arial, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-brand: #0088ff;
+}
+
+html {
+  background: #ffffff;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-sans);
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+a {
+  cursor: pointer;
+  font-family: var(--font-sans);
+}
+
+.js .reveal {
+  opacity: 0;
+  transition-duration: 900ms;
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.js .reveal-bottom {
+  transform: translate3d(0, 48px, 0);
+}
+
+.js .reveal-left {
+  transform: translate3d(-48px, 0, 0);
+}
+
+.js .reveal-right {
+  transform: translate3d(48px, 0, 0);
+}
+
+.js .reveal-top {
+  transform: translate3d(0, -48px, 0);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .js .reveal,
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.code-token-k {
+  color: rgb(230 205 105);
+}
+
+.code-token-d,
+.code-token-v,
+.code-token-s {
+  color: rgb(85 181 219);
+}
+
+.code-token-o {
+  color: rgb(159 202 86);
+}
+
+.code-token-v2,
+.code-token-p {
+  color: rgb(160 116 196);
+}
+
+.code-token-n,
+.code-token-b {
+  color: rgb(205 63 69);
+}
+
+.code-token-c {
+  color: rgb(65 83 91);
+}
+
+.code-token-i::after {
+  display: inline-block;
+  width: 0.6ch;
+  content: "";
+  background: #ffffff;
+}
