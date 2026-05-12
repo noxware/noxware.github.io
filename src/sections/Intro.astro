@@ -20,11 +20,11 @@ const code = [
 ---
 
 <section class="flex min-h-screen w-full flex-col">
-  <div class="flex flex-1 flex-col items-center justify-center bg-brand px-4 py-12 text-white sm:px-8">
-    <h1 class="mb-4 text-center font-heading text-[2.2rem] font-semibold leading-tight sm:text-[2.8rem] md:text-[3.2rem] xl:text-[4rem]">
+  <div class="flex flex-1 flex-col items-center justify-center bg-brand p-4 text-white min-[600px]:p-8">
+    <h1 class="mb-4 text-center font-heading text-[2.2em] font-semibold leading-none min-[500px]:text-[2.8em] min-[730px]:text-[3.2em] min-[1280px]:text-[4em]">
       Hi, I'm Franco Profeti
     </h1>
-    <p class="mb-4 text-center font-heading text-base font-semibold leading-tight text-neutral-200 sm:text-[1.2rem] md:mb-12 md:text-2xl lg:text-[1.7rem] xl:text-[1.8rem]">
+    <p class="mb-4 text-center font-heading text-[1em] font-semibold leading-none text-neutral-200 min-[500px]:text-[1.2em] min-[600px]:mb-12 min-[600px]:text-[1.5em] min-[1000px]:text-[1.7em] min-[1280px]:text-[1.8em]">
       A developer from Uruguay who likes cats and programming
     </p>
     <AnimatedCodeEditor code={code} cursor="%i%" speed={20} client:load />

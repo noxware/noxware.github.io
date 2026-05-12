@@ -38,55 +38,55 @@ import english from "../assets/hlangs/en.png?url";
 import spanish from "../assets/hlangs/es.svg?url";
 ---
 
-<section id="skills" class="flex flex-col items-center px-4 pb-8 md:pb-28">
+<section id="skills" class="flex flex-col items-center p-4 min-[730px]:pb-28">
   <SectionTitle class="mb-6">Skills</SectionTitle>
 
   <SkillCategory title="Programming languages">
-    <Skill image={rust} title="Rust" />
-    <Skill image={typescript} title="TypeScript" />
-    <Skill image={elixir} title="Elixir" />
-    <Skill image={javascript} title="JavaScript" />
-    <Skill image={dart} title="Dart" />
     <Skill image={c} title="C" />
+    <Skill image={dart} title="Dart" />
+    <Skill image={elixir} title="Elixir" />
+    <Skill image={javascript} title="Javascript" />
     <Skill image={lua} title="Lua" />
     <Skill image={python} title="Python" />
+    <Skill image={rust} title="Rust" />
+    <Skill image={typescript} title="Typescript" />
   </SkillCategory>
 
   <SkillCategory title="Other types of computer languages">
-    <Skill image={html} title="HTML" />
     <Skill image={css} title="CSS" />
-    <Skill image={sass} title="Sass" />
+    <Skill image={html} title="HTML" />
     <Skill image={sql} title="SQL" />
+    <Skill image={sass} title="Sass" />
   </SkillCategory>
 
-  <SkillCategory title="Other technologies of interest">
-    <Skill image={linux} title="Linux" />
-    <Skill image={git} title="Git" />
-    <Skill image={react} title="React" />
-    <Skill image={reactNative} title="React Native" />
-    <Skill image={tailwind} title="Tailwind" />
-    <Skill image={vue} title="Vue" />
+  <SkillCategory title="Other techologies of interest">
     <Skill image={alpine} title="Alpine.js" />
-    <Skill image={phoenix} title="Phoenix" />
+    <Skill image={arduino} title="Arduino" />
+    <Skill image={bevy} title="Bevy" />
     <Skill image={express} title="Express" />
     <Skill image={firebase} title="Firebase" />
     <Skill image={flutter} title="Flutter" />
-    <Skill image={bevy} title="Bevy" />
+    <Skill image={gimp} title="Gimp" />
+    <Skill image={git} title="Git" />
+    <Skill image={linux} title="Linux" />
+    <Skill image={phoenix} title="Phoenix" />
     <Skill image={puppeteer} title="Puppeteer" />
     <Skill image={raspberryPi} title="Raspberry Pi" />
-    <Skill image={arduino} title="Arduino" />
-    <Skill image={gimp} title="Gimp" />
+    <Skill image={reactNative} title="React Native" />
+    <Skill image={react} title="React" />
+    <Skill image={tailwind} title="Tailwind" />
+    <Skill image={vue} title="Vue" />
   </SkillCategory>
 
   <SkillCategory title="Databases">
+    <Skill image={mongo} title="MongoDB" />
+    <Skill image={mysql} title="MySQL" />
     <Skill image={postgres} title="PostgreSQL" />
     <Skill image={sqlite} title="SQLite" />
-    <Skill image={mysql} title="MySQL" />
-    <Skill image={mongo} title="MongoDB" />
   </SkillCategory>
 
   <SkillCategory title="Human languages">
-    <Skill image={spanish} title="Spanish" description="Native" />
     <Skill image={english} title="English" description="Intermediate" />
+    <Skill image={spanish} title="Spanish" description="Native" />
   </SkillCategory>
 </section>

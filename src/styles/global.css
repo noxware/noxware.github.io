@@ -16,8 +16,9 @@ body {
   min-height: 100vh;
   margin: 0;
   background: #ffffff;
-  color: #171717;
+  color: #000000;
   font-family: var(--font-sans);
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

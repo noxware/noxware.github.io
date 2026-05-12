@@ -28,7 +28,7 @@ const FakeCodeEditor = forwardRef<HTMLDivElement, Props>(({ code, className = ""
           </g>
         </svg>
       </div>
-      <div className="text-xs leading-[1.4] md:text-sm" aria-label="Decorative Python code sample">
+      <div className="text-xs leading-[1.4] min-[730px]:text-sm" aria-label="Decorative Python code sample">
         {codeLines.map((line, lineIndex) => {
           const tokens = line.split("%");
 
